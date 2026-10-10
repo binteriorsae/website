@@ -17,6 +17,8 @@ Arabic box next to each other. Saving publishes the change in about a minute.
 * **Contact details / footer / website name:** *Contact details & footer*.
 
 ## For developers
+Needs **Node 22 or newer** (see `.nvmrc`; with nvm: `nvm install 22 && nvm use`).
+
 ```bash
 npm install
 npm run dev          # site + editing screen at http://localhost:4321 (admin at /admin/)
