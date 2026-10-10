@@ -75,7 +75,8 @@
       "caption": {
         "en": "Test",
         "ar": "Test"
-      }
+      },
+      "before": "/uploads/garden.jpeg"
     }
   ]
 }
