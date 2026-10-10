@@ -76,7 +76,8 @@
         "en": "Test",
         "ar": "Test"
       },
-      "before": "/uploads/garden.jpeg"
+      "before": "/uploads/garden.jpeg",
+      "after": "/uploads/garden.jpeg"
     }
   ]
 }
