@@ -16,9 +16,11 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+# Pinned to Ubuntu 24.04 so a change of the 'latest' label doesn't surprise us;
+# move to a newer image on purpose when ready.
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       # TinaCMS keys: added once under Settings > Secrets and variables > Actions
       TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
@@ -28,8 +30,8 @@ jobs:
       SITE_URL: ${{ vars.SITE_URL || 'https://binteriorsae.github.io' }}
       BASE_PATH: ${{ vars.BASE_PATH || '/website' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -42,16 +44,16 @@ jobs:
           else
             npm run build:ci
           fi
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
