@@ -24,6 +24,11 @@ html[lang="ar"] .marquee .track{font-size:32px}
 [dir="rtl"] .btn .arr{transform:scaleX(-1)}
 [dir="rtl"] .eyebrow::before{margin:0}
 
+/* header: the same layout in both languages (logo left, menu right).
+   In Arabic only the order of the links is mirrored (Home at the far right). */
+[dir="rtl"] header.site .wrap{direction:ltr}
+[dir="rtl"] header.site nav.main{direction:rtl}
+
 /* hero */
 [dir="rtl"] .hero .right .seal{left:auto;right:0;transform:translate(50%,-50%)}
 [dir="rtl"] .hero .badge{left:auto;right:60px}
