@@ -189,7 +189,8 @@ export default defineConfig({
         {
           type: 'object', name: 'projects', label: 'Project pages',
           fields: ['allProjects', 'previous', 'next', 'brief', 'briefTitle', 'beforeAfter', 'transformation', 'beforeAfterIntro',
-                   'before', 'after', 'drag', 'type', 'property', 'year', 'location', 'scope'].map((k) => bi(k, k)),
+                   'before', 'after', 'drag', 'type', 'property', 'year', 'location', 'scope', 'gallery', 'galleryTitle', 'morePhotos',
+                   'close', 'prevPhoto', 'nextPhoto'].map((k) => bi(k, k)),
         },
         {
           type: 'object', name: 'categories', label: 'Project categories',
@@ -231,12 +232,12 @@ export default defineConfig({
           image('cardImage', 'Portfolio card photo', 'Shown in the portfolio grid. Can be the same as the header photo.'),
           {
             type: 'object', name: 'pairs', label: 'Before & after photos', list: true,
-            description: 'Each pair becomes a draggable comparison slider. The first one is shown large.',
+            description: 'With a BEFORE and an AFTER photo, the pair becomes a draggable comparison slider. With only an AFTER photo it is shown as a normal photo. The first one is shown large; photos 1 to 5 appear in the main gallery, and from the 6th onwards they appear in a smaller grid that opens larger when clicked.',
             ui: { itemProps: (item: any) => ({ label: item?.caption?.en || 'New pair' }) },
             fields: [
               bi('caption', 'Caption (e.g. Living room)'),
-              image('before', 'BEFORE photo', 'Leave empty to show a faded version of the AFTER photo as a placeholder.'),
-              image('after', 'AFTER photo'),
+              image('before', 'BEFORE photo (optional)', 'Leave empty to show just the AFTER photo, with no slider.'),
+              image('after', 'AFTER photo (or the photo itself)'),
             ],
           },
         ],

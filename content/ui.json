@@ -121,6 +121,30 @@
     "scope": {
       "en": "Scope",
       "ar": "نطاق العمل"
+    },
+    "gallery": {
+      "en": "Gallery",
+      "ar": "المعرض"
+    },
+    "galleryTitle": {
+      "en": "The *project.*",
+      "ar": "صور *المشروع.*"
+    },
+    "morePhotos": {
+      "en": "More photos",
+      "ar": "المزيد من الصور"
+    },
+    "close": {
+      "en": "Close",
+      "ar": "إغلاق"
+    },
+    "prevPhoto": {
+      "en": "Previous photo",
+      "ar": "الصورة السابقة"
+    },
+    "nextPhoto": {
+      "en": "Next photo",
+      "ar": "الصورة التالية"
     }
   },
   "categories": {

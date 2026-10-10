@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import Img from '../../../components/Img.astro';
 import { LANGS, tx, rich, plain, type Lang } from '../../../lib/i18n';
 import { href } from '../../../lib/site';
+import { imgSrc } from '../../../lib/img';
 import { projects, categoryLabel } from '../../../lib/projects';
 import ui from '../../../../content/ui.json';
 
@@ -18,8 +19,21 @@ const U = ui.projects;
 const ghost = plain(tx(p.name, lang)).replace(/^(The |ال)/i, '').charAt(0);
 const arrowPrev = lang === 'ar' ? '→' : '←';
 const arrowNext = lang === 'ar' ? '←' : '→';
+
+// Photos 1-5 form the main gallery; from the 6th onwards they go into a smaller grid with a viewer.
+const MAIN = 5;
+const pairs: any[] = p.pairs || [];
+const featured = pairs.slice(0, MAIN);
+const more = pairs.slice(MAIN);
+const hasSlider = featured.some((x: any) => x.before);
+// data for the viewer (full-size photos)
+const galleryData = more.map((x: any) => ({
+  caption: tx(x.caption, lang),
+  after: imgSrc(x.after, 1800),
+  before: x.before ? imgSrc(x.before, 1800) : '',
+}));
 ---
-<Base lang={lang} title={`${tx(p.name, lang)} — B Interiors`} description={tx(p.line, lang)} path={`projects/${p.slug}/`} section="portfolio" scripts={['ba.js']}>
+<Base lang={lang} title={`${tx(p.name, lang)} — B Interiors`} description={tx(p.line, lang)} path={`projects/${p.slug}/`} section="portfolio" scripts={['ba.js', 'gallery.js']}>
   <section class="phero">
     <Img class="bg" src={p.heroImage} alt={tx(p.name, lang)} width={1800} lazy={false} /><div class="shade"></div><div class="ghost">{ghost}</div>
     <div class="wrap">
@@ -45,26 +59,69 @@ const arrowNext = lang === 'ar' ? '←' : '→';
     </dl>
   </div></section>
 
-  {p.pairs?.length > 0 && (
+  {pairs.length > 0 && (
     <section class="pg"><div class="wrap">
-      <div class="eyebrow rv">{tx(U.beforeAfter, lang)}</div>
-      <h2 class="rv" set:html={rich(tx(U.transformation, lang))} />
-      <p class="pg-intro rv">{tx(U.beforeAfterIntro, lang)}</p>
+      <div class="eyebrow rv">{tx(hasSlider ? U.beforeAfter : U.gallery, lang)}</div>
+      <h2 class="rv" set:html={rich(tx(hasSlider ? U.transformation : U.galleryTitle, lang))} />
+      {hasSlider && <p class="pg-intro rv">{tx(U.beforeAfterIntro, lang)}</p>}
+
       <div class="ba-grid">
-        {p.pairs.map((pair: any, i: number) => (
-          <figure class={`ba-fig${i === 0 ? ' wide' : ''} rv`}>
-            <div class="ba" style="--pos:50%">
-              <Img class="after" src={pair.after} alt={`${tx(pair.caption, lang)} — ${tx(U.after, lang)}`} width={i === 0 ? 1800 : 1200} />
-              <Img class="before" src={pair.before || pair.after} alt={`${tx(pair.caption, lang)} — ${tx(U.before, lang)}`} width={i === 0 ? 1800 : 1200} />
-              <span class="lab b">{tx(U.before, lang)}</span><span class="lab a">{tx(U.after, lang)}</span>
-              <div class="handle"></div>
-              <input type="range" min="0" max="100" value="50" aria-label={`${tx(U.drag, lang)}: ${tx(pair.caption, lang)}`} />
-            </div>
-            <figcaption><span>{tx(pair.caption, lang)}</span><span class="hint">{tx(U.drag, lang)}</span></figcaption>
-          </figure>
-        ))}
+        {featured.map((pair: any, i: number) => {
+          const w = i === 0 ? 1800 : 1200;
+          return pair.before ? (
+            <figure class={`ba-fig${i === 0 ? ' wide' : ''} rv`}>
+              <div class="ba" style="--pos:50%">
+                <Img class="after" src={pair.after} alt={`${tx(pair.caption, lang)} — ${tx(U.after, lang)}`} width={w} />
+                <Img class="before" src={pair.before} alt={`${tx(pair.caption, lang)} — ${tx(U.before, lang)}`} width={w} />
+                <span class="lab b">{tx(U.before, lang)}</span><span class="lab a">{tx(U.after, lang)}</span>
+                <div class="handle"></div>
+                <input type="range" min="0" max="100" value="50" aria-label={`${tx(U.drag, lang)}: ${tx(pair.caption, lang)}`} />
+              </div>
+              <figcaption><span>{tx(pair.caption, lang)}</span><span class="hint">{tx(U.drag, lang)}</span></figcaption>
+            </figure>
+          ) : (
+            <figure class={`ph-fig${i === 0 ? ' wide' : ''} rv`}>
+              <div class="ph"><Img src={pair.after} alt={tx(pair.caption, lang)} width={w} /></div>
+              <figcaption><span>{tx(pair.caption, lang)}</span></figcaption>
+            </figure>
+          );
+        })}
       </div>
+
+      {more.length > 0 && (
+        <div class="gal">
+          <h3 class="gal-title rv">{tx(U.morePhotos, lang)}</h3>
+          <div class="gal-grid">
+            {more.map((pair: any, i: number) => (
+              <button type="button" class="gal-item rv" data-i={i} aria-label={tx(pair.caption, lang)}>
+                <Img src={pair.after} alt={tx(pair.caption, lang)} width={800} />
+                <span class="cap">{tx(pair.caption, lang)}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div></section>
+  )}
+
+  {more.length > 0 && (
+    <>
+      <script type="application/json" id="gal-data" set:html={JSON.stringify(galleryData)} />
+      <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label={tx(U.morePhotos, lang)}
+           data-before={tx(U.before, lang)} data-after={tx(U.after, lang)}>
+        <button type="button" class="lb-close" aria-label={tx(U.close, lang)}>×</button>
+        <button type="button" class="lb-prev" aria-label={tx(U.prevPhoto, lang)}></button>
+        <figure class="lb-fig">
+          <img class="lb-img" alt="" />
+          <figcaption><span class="lb-cap"></span><span class="lb-count"></span></figcaption>
+          <div class="lb-toggle" hidden>
+            <button type="button" data-v="before">{tx(U.before, lang)}</button>
+            <button type="button" data-v="after" class="on">{tx(U.after, lang)}</button>
+          </div>
+        </figure>
+        <button type="button" class="lb-next" aria-label={tx(U.nextPhoto, lang)}></button>
+      </div>
+    </>
   )}
 
   <section class="pn-sec"><div class="wrap pn">
