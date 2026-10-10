@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "eyebrow": {
+      "en": "Interior Design Studio · UAE",
+      "ar": "استوديو تصميم داخلي · الإمارات"
+    },
+    "headline": {
+      "en": "Spaces with\nquiet *elegance*\n& soul.",
+      "ar": "مساحات\nب*أناقة هادئة*\nوروح."
+    },
+    "lead": {
+      "en": "I’m Bayan Jijakli. I design calm, layered, beautifully tailored interiors — where every detail is considered and nothing is accidental.",
+      "ar": "أنا بيان جيجكلي. أصمّم مساحات هادئة، متعددة الطبقات ومفصّلة بعناية — حيث كل تفصيل مدروس ولا شيء فيه محض صدفة."
+    },
+    "photo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+    "photoAlt": {
+      "en": "Modern open-plan living room",
+      "ar": "غرفة معيشة مفتوحة عصرية"
+    }
+  },
+  "marquee": [
+    {
+      "en": "Residential Design",
+      "ar": "التصميم السكني"
+    },
+    {
+      "en": "Space Planning",
+      "ar": "تخطيط المساحات"
+    },
+    {
+      "en": "Bespoke Furniture",
+      "ar": "أثاث مصمَّم خصيصًا"
+    },
+    {
+      "en": "Colour & Materials",
+      "ar": "الألوان والخامات"
+    },
+    {
+      "en": "Styling",
+      "ar": "التنسيق"
+    },
+    {
+      "en": "Project Management",
+      "ar": "إدارة المشاريع"
+    }
+  ],
+  "studio": {
+    "photo": "https://images.unsplash.com/photo-1631679706909-1844bbd07221",
+    "photoAlt": {
+      "en": "Boho living room",
+      "ar": "غرفة معيشة بطابع بوهيمي"
+    },
+    "caption": {
+      "en": "Concept · Craft · Calm",
+      "ar": "فكرة · حِرفة · هدوء"
+    },
+    "eyebrow": {
+      "en": "The Studio",
+      "ar": "الاستوديو"
+    },
+    "title": {
+      "en": "Design that feels *effortless*, because it’s been thought through.",
+      "ar": "تصميم يبدو *سهلًا*، لأنه مدروس بعناية."
+    },
+    "paragraphs": [
+      {
+        "en": "B Interiors is a boutique studio led by Bayan Jijakli. From the first sketch to the final styled shelf, each project is shaped around the way you live — blending refined materials, soft light and timeless form into homes with a sense of ease.",
+        "ar": "B Interiors استوديو بوتيكي بقيادة بيان جيجكلي. من أول رسمة حتى آخر رفٍّ منسّق، يُصمَّم كل مشروع وفق طريقة عيشك — بدمج خامات راقية وإضاءة ناعمة وخطوط خالدة لبيوتٍ تفيض راحة."
+      },
+      {
+        "en": "No templates, no trends for trend’s sake. Just spaces that are personal, polished and built to last.",
+        "ar": "لا قوالب جاهزة ولا موضة لأجل الموضة. فقط مساحات شخصية متقنة صُنعت لتدوم."
+      }
+    ]
+  }
+}

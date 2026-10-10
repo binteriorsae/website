@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import { LANGS, tx, rich, plain, type Lang } from '../../lib/i18n';
+import contact from '../../../content/contact.json';
+import site from '../../../content/site.json';
+import ui from '../../../content/ui.json';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const { header, info, thanks } = contact;
+const U = ui.contact;
+---
+<Base lang={lang} title={`${plain(tx(header.eyebrow, lang))} — B Interiors`} description={tx(header.lead, lang)} path="contact/" section="contact" bodyClass="svc-page" scripts={['contact.js']}>
+  <section class="phero sv-hero"><div class="ghost">@</div><div class="wrap">
+    <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
+    <h1 class="rv" set:html={rich(tx(header.title, lang))} />
+    <p class="rv">{tx(header.lead, lang)}</p>
+  </div></section>
+
+  <section><div class="wrap cgrid">
+    <div class="cinfo rv">
+      <div class="eyebrow">{tx(info.eyebrow, lang)}</div>
+      <h2 style="font-size:clamp(32px,3.6vw,48px)" set:html={rich(tx(info.title, lang))} />
+      <dl>
+        <dt>{tx(U.email, lang)}</dt><dd><a href={`mailto:${site.email}`}>{site.email}</a></dd>
+        <dt>{tx(U.phone, lang)}</dt><dd dir="ltr" style={lang === 'ar' ? 'text-align:right' : undefined}>{site.phone}</dd>
+        <dt>{tx(U.studio, lang)}</dt><dd>{tx(site.location, lang)}</dd>
+        <dt>{tx(U.follow, lang)}</dt><dd><a href={site.instagramUrl} dir="ltr">{site.instagramLabel}</a></dd>
+      </dl>
+    </div>
+    <div class="rv">
+      <form id="enquiry" action={site.formEndpoint || undefined} method="post">
+        <div class="row">
+          <label><span>{tx(U.name, lang)}</span><input required name="name" autocomplete="name" /></label>
+          <label><span>{tx(U.email, lang)}</span><input required type="email" name="email" autocomplete="email" dir="ltr" /></label>
+        </div>
+        <div class="row">
+          <label><span>{tx(U.phoneField, lang)}</span><input name="phone" autocomplete="tel" dir="ltr" /></label>
+          <label><span>{tx(U.projectType, lang)}</span>
+            <select name="type">
+              <option>{tx(U.typeResidential, lang)}</option><option>{tx(U.typeCommercial, lang)}</option>
+              <option>{tx(U.typeStyling, lang)}</option><option>{tx(U.typeConsultation, lang)}</option>
+            </select>
+          </label>
+        </div>
+        <label><span>{tx(U.message, lang)}</span><textarea name="message" required></textarea></label>
+        <input type="hidden" name="language" value={lang} />
+        <button class="btn gold" type="submit">{tx(ui.buttons.send, lang)} <span class="arr"></span></button>
+      </form>
+      <p class="form-error" style="display:none;margin-top:20px;color:#a33">{tx(U.error, lang)}</p>
+      <div class="thanks">{tx(thanks, lang)}</div>
+    </div>
+  </div></section>
+</Base>

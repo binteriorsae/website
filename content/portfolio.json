@@ -1,0 +1,17 @@
+{
+  "header": {
+    "eyebrow": {
+      "en": "Portfolio",
+      "ar": "الأعمال"
+    },
+    "title": {
+      "en": "Selected *work*",
+      "ar": "أعمال *مختارة*"
+    },
+    "lead": {
+      "en": "A look at spaces designed with care.",
+      "ar": "نظرة على مساحات صُمّمت بعناية."
+    },
+    "photo": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace"
+  }
+}

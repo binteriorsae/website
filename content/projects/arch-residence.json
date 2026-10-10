@@ -1,0 +1,75 @@
+{
+  "order": 1,
+  "name": {
+    "en": "The Arch Residence",
+    "ar": "إقامة القوس"
+  },
+  "category": "residential",
+  "property": {
+    "en": "Villa",
+    "ar": "فيلا"
+  },
+  "year": "2025",
+  "location": {
+    "en": "United Arab Emirates",
+    "ar": "الإمارات العربية المتحدة"
+  },
+  "line": {
+    "en": "A family villa rebuilt around light, glass and a quiet material palette.",
+    "ar": "فيلا عائلية أُعيد بناؤها حول الضوء والزجاج ولوحة خامات هادئة."
+  },
+  "brief": {
+    "en": "The clients wanted a home that opened to the garden and felt calm from the first step inside. We reworked the plan around the arch, softened the entrance sequence and layered timber, stone and linen throughout.",
+    "ar": "أراد العملاء بيتًا ينفتح على الحديقة ويمنح الهدوء من أول خطوة. أعدنا بناء المخطط حول القوس، ولطّفنا مدخل البيت، ووزّعنا الخشب والحجر والكتان في كل مكان."
+  },
+  "scope": [
+    {
+      "en": "Space planning",
+      "ar": "تخطيط المساحات"
+    },
+    {
+      "en": "Concept & materials",
+      "ar": "المفهوم والخامات"
+    },
+    {
+      "en": "Custom joinery",
+      "ar": "نجارة خاصة"
+    },
+    {
+      "en": "Lighting design",
+      "ar": "تصميم الإضاءة"
+    },
+    {
+      "en": "Furniture & styling",
+      "ar": "الأثاث والتنسيق"
+    }
+  ],
+  "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+  "cardImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+  "pairs": [
+    {
+      "caption": {
+        "en": "The façade",
+        "ar": "الواجهة"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+    },
+    {
+      "caption": {
+        "en": "Garden terrace",
+        "ar": "تراس الحديقة"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc"
+    },
+    {
+      "caption": {
+        "en": "Entrance court",
+        "ar": "فناء المدخل"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import Img from '../../components/Img.astro';
+import { LANGS, tx, rich, type Lang } from '../../lib/i18n';
+import { asset, href } from '../../lib/site';
+import home from '../../../content/home.json';
+import site from '../../../content/site.json';
+import ui from '../../../content/ui.json';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const marquee = [...home.marquee, ...home.marquee];
+const h = home.hero, s = home.studio;
+---
+<Base lang={lang} title={tx(site.siteTitle, lang)} description={tx(site.siteDescription, lang)} path="" section="home" bodyClass="home">
+  <section class="hero">
+    <div class="left">
+      <div class="eyebrow rv">{tx(h.eyebrow, lang)}</div>
+      <h1 class="rv" set:html={rich(tx(h.headline, lang))} />
+      <p class="lead rv">{tx(h.lead, lang)}</p>
+      <div class="cta rv">
+        <a class="btn gold" href={href(lang, 'contact/')}>{tx(ui.buttons.startProject, lang)} <span class="arr"></span></a>
+        <a class="link" href={href(lang, 'portfolio/')}>{tx(ui.buttons.viewPortfolio, lang)}</a>
+      </div>
+    </div>
+    <div class="right">
+      <Img src={h.photo} alt={tx(h.photoAlt, lang)} width={1600} lazy={false} />
+      <span class="seal" style={`background-image:url(${asset('logo.png')})`}></span>
+      <div class="badge">{tx(ui.common.estBadge, lang)}</div>
+    </div>
+    <div class="scrollcue"><i></i>{tx(ui.common.scroll, lang)}</div>
+  </section>
+
+  <div class="marquee"><div class="track">{marquee.map((m) => <span>{tx(m, lang)}</span>)}</div></div>
+
+  <section><div class="wrap split">
+    <div class="rv"><div class="frame"><Img src={s.photo} alt={tx(s.photoAlt, lang)} width={1000} /><div class="cap">{tx(s.caption, lang)}</div></div></div>
+    <div>
+      <div class="eyebrow rv">{tx(s.eyebrow, lang)}</div>
+      <h2 class="rv" set:html={rich(tx(s.title, lang))} />
+      {s.paragraphs.map((p) => <p class="rv">{tx(p, lang)}</p>)}
+      <a class="btn rv" style="margin-top:40px" href={href(lang, 'about/')}>{tx(ui.buttons.meetBayan, lang)} <span class="arr"></span></a>
+    </div>
+  </div></section>
+</Base>

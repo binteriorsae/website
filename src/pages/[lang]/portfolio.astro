@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import Img from '../../components/Img.astro';
+import { LANGS, tx, rich, plain, type Lang } from '../../lib/i18n';
+import { href } from '../../lib/site';
+import { projects, categoryLabel } from '../../lib/projects';
+import portfolio from '../../../content/portfolio.json';
+import ui from '../../../content/ui.json';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const { header } = portfolio;
+const cols = ['c-a', 'c-b', 'c-c', 'c-d', 'c-e', 'c-f'];
+const cats = ['all', 'residential', 'commercial', 'styling'];
+const ghost = lang === 'ar' ? 'ع' : 'P';
+---
+<Base lang={lang} title={`${plain(tx(header.eyebrow, lang))} — B Interiors`} description={tx(header.lead, lang)} path="portfolio/" section="portfolio">
+  <section class="phero">
+    <Img class="bg" src={header.photo} width={1800} lazy={false} /><div class="shade"></div><div class="ghost">{ghost}</div>
+    <div class="wrap">
+      <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
+      <h1 class="rv" set:html={rich(tx(header.title, lang))} />
+      <p class="rv">{tx(header.lead, lang)}</p>
+    </div>
+  </section>
+
+  <section><div class="wrap">
+    <div class="filters rv">
+      {cats.map((c, i) => <button class={i === 0 ? 'on' : undefined} data-f={c}>{tx((ui.categories as any)[c], lang)}</button>)}
+    </div>
+    <div class="pgrid">
+      {projects.map((p, i) => (
+        <a class={`card ${cols[i % cols.length]} rv`} data-cat={p.category} href={href(lang, `projects/${p.slug}/`)}>
+          <div class="imgbox"><div class="frame">
+            <Img src={p.cardImage || p.heroImage} alt={tx(p.name, lang)} width={1000} />
+            <div class="cap">{categoryLabel(p.category, lang)}</div>
+            <div class="meta"><h3>{tx(p.name, lang)}</h3><span>{tx(p.property, lang)} · {p.year}</span></div>
+          </div></div>
+        </a>
+      ))}
+    </div>
+  </div></section>
+</Base>

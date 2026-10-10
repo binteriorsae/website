@@ -1,0 +1,83 @@
+---
+import '../styles/site.css';
+import '../styles/rtl.css';
+import { LANGS, DIR, LANG_NAME, other, tx, type Lang } from '../lib/i18n';
+import { asset, href } from '../lib/site';
+import site from '../../content/site.json';
+import ui from '../../content/ui.json';
+import services from '../../content/services.json';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  /** Page path after the language, e.g. "about/" — used for the language switch. */
+  path?: string;
+  /** Which menu item to highlight. */
+  section?: 'home' | 'about' | 'services' | 'portfolio' | 'contact';
+  bodyClass?: string;
+  scripts?: string[];
+}
+const { lang, title, description = '', path = '', section = 'home', bodyClass = '', scripts = [] } = Astro.props;
+const noindex = import.meta.env.PUBLIC_NOINDEX !== 'false';
+const alt = other(lang);
+const nav: [typeof section, string][] = [
+  ['home', ''], ['about', 'about/'], ['services', 'services/'], ['portfolio', 'portfolio/'], ['contact', 'contact/'],
+];
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang={lang} dir={DIR[lang]} class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  {noindex && <meta name="robots" content="noindex,nofollow" />}
+  <title>{title}</title>
+  {description && <meta name="description" content={description} />}
+  <link rel="icon" href={asset('favicon.jpg')} />
+  {LANGS.map((l) => <link rel="alternate" hreflang={l} href={new URL(href(l, path), Astro.site).href} />)}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script is:inline>document.documentElement.className='';</script>
+</head>
+<body class={bodyClass}>
+  <header class="site"><div class="wrap">
+    <a href={href(lang)} class="brand" aria-label="B Interiors"><img class="brand-logo" src={asset('logo.png')} alt="B Interiors" /><span class="name">B INTERIORS</span></a>
+    <button class="burger" aria-label={tx(ui.common.menu, lang)}><span></span><span></span><span></span></button>
+    <nav class="main">
+      {nav.map(([key, p]) => (
+        <a href={href(lang, p)} class={key === section ? 'active' : undefined} aria-current={key === section ? 'page' : undefined}>{tx((ui.nav as any)[key], lang)}</a>
+      ))}
+      <a class="lang-switch" href={href(alt, path)} hreflang={alt} lang={alt}>{LANG_NAME[alt]}</a>
+    </nav>
+  </div></header>
+
+  <slot />
+
+  <footer class="site"><div class="wrap">
+    <div class="fgrid">
+      <div><img class="logo" src={asset('logo-gold.jpg')} alt="B Interiors" /><p>{tx(site.footerAbout, lang)}</p></div>
+      <div><h4>{tx(ui.footer.explore, lang)}</h4><ul>
+        {nav.map(([key, p]) => <li><a href={href(lang, p)}>{tx((ui.nav as any)[key], lang)}</a></li>)}
+      </ul></div>
+      <div><h4>{tx(ui.footer.services, lang)}</h4><ul>
+        {services.items.map((s) => <li><a href={href(lang, 'services/')}>{tx(s.title, lang)}</a></li>)}
+      </ul></div>
+      <div><h4>{tx(ui.footer.contact, lang)}</h4><ul>
+        <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+        <li><a href={`tel:${site.phone.replace(/\s/g, '')}`} dir="ltr">{site.phone}</a></li>
+        <li>{tx(site.location, lang)}</li>
+        <li><a href={site.instagramUrl} dir="ltr">{site.instagramLabel}</a></li>
+      </ul></div>
+    </div>
+    <div class="fbot"><span>© {year} B Interiors</span><span>{tx(ui.footer.rights, lang)}</span></div>
+  </div></footer>
+
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script is:inline src={asset('js/main.js')}></script>
+  {scripts.map((s) => <script is:inline src={asset(`js/${s}`)}></script>)}
+</body>
+</html>

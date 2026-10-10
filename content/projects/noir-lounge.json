@@ -1,0 +1,71 @@
+{
+  "order": 2,
+  "name": {
+    "en": "Noir Lounge",
+    "ar": "صالة نوار"
+  },
+  "category": "styling",
+  "property": {
+    "en": "Apartment",
+    "ar": "شقة"
+  },
+  "year": "2025",
+  "location": {
+    "en": "United Arab Emirates",
+    "ar": "الإمارات العربية المتحدة"
+  },
+  "line": {
+    "en": "A moody, tailored living space styled in charcoal, brass and soft light.",
+    "ar": "مساحة معيشة داكنة الطابع ومفصّلة بدرجات الفحم والنحاس والضوء الناعم."
+  },
+  "brief": {
+    "en": "A compact city apartment that needed to feel generous and grown-up. We worked in deep neutrals, added warm metal accents and built a lighting plan that changes the room from day to evening.",
+    "ar": "شقة صغيرة في المدينة أرادت أن تبدو رحبة وراقية. اعتمدنا ألوانًا داكنة هادئة وأضفنا لمسات معدنية دافئة، وصمّمنا الإضاءة لتتبدّل الغرفة من النهار إلى المساء."
+  },
+  "scope": [
+    {
+      "en": "Styling & furnishing",
+      "ar": "التنسيق والتأثيث"
+    },
+    {
+      "en": "Lighting layers",
+      "ar": "طبقات الإضاءة"
+    },
+    {
+      "en": "Soft furnishings",
+      "ar": "المفروشات الناعمة"
+    },
+    {
+      "en": "Art curation",
+      "ar": "انتقاء الأعمال الفنية"
+    }
+  ],
+  "heroImage": "https://images.unsplash.com/photo-1600121848594-d8644e57abab",
+  "cardImage": "https://images.unsplash.com/photo-1600121848594-d8644e57abab",
+  "pairs": [
+    {
+      "caption": {
+        "en": "The lounge",
+        "ar": "الصالة"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1600121848594-d8644e57abab"
+    },
+    {
+      "caption": {
+        "en": "Reading corner",
+        "ar": "ركن القراءة"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e"
+    },
+    {
+      "caption": {
+        "en": "Sofa wall",
+        "ar": "جدار الأريكة"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
+    }
+  ]
+}

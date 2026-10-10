@@ -1,0 +1,23 @@
+{
+  "email": "info@binteriors.ae",
+  "phone": "+971 00 000 0000",
+  "instagramLabel": "@binteriors",
+  "instagramUrl": "#",
+  "formEndpoint": "",
+  "location": {
+    "en": "United Arab Emirates",
+    "ar": "الإمارات العربية المتحدة"
+  },
+  "siteTitle": {
+    "en": "B Interiors — Interior Design by Bayan Jijakli",
+    "ar": "B Interiors — تصميم داخلي من بيان جيجكلي"
+  },
+  "siteDescription": {
+    "en": "B Interiors is the interior design studio of Bayan Jijakli. Elegant, timeless residential and commercial interiors in the UAE.",
+    "ar": "B Interiors استوديو التصميم الداخلي لبيان جيجكلي. تصاميم سكنية وتجارية أنيقة وخالدة في الإمارات."
+  },
+  "footerAbout": {
+    "en": "Considered, timeless interiors designed by Bayan Jijakli — homes that feel as good as they look.",
+    "ar": "تصاميم داخلية مدروسة وخالدة من بيان جيجكلي — بيوت تبدو جميلة وتمنح شعورًا أجمل."
+  }
+}

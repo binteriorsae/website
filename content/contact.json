@@ -1,0 +1,30 @@
+{
+  "header": {
+    "eyebrow": {
+      "en": "Contact",
+      "ar": "تواصل"
+    },
+    "title": {
+      "en": "Let’s create something *beautiful.*",
+      "ar": "لنصنع شيئًا *جميلًا.*"
+    },
+    "lead": {
+      "en": "Tell me about your space and what you have in mind. I reply within two working days.",
+      "ar": "أخبرني عن مساحتك وما يدور في ذهنك. أردّ خلال يومي عمل."
+    }
+  },
+  "info": {
+    "eyebrow": {
+      "en": "Get in touch",
+      "ar": "ابقَ على تواصل"
+    },
+    "title": {
+      "en": "Say *hello.*",
+      "ar": "قل *مرحبًا.*"
+    }
+  },
+  "thanks": {
+    "en": "Thank you — your message is on its way. I’ll be in touch very soon.",
+    "ar": "شكرًا لك — رسالتك في طريقها إليّ. سأتواصل معك قريبًا جدًا."
+  }
+}

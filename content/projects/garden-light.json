@@ -1,0 +1,75 @@
+{
+  "order": 5,
+  "name": {
+    "en": "Garden Light",
+    "ar": "ضوء الحديقة"
+  },
+  "category": "residential",
+  "property": {
+    "en": "Villa",
+    "ar": "فيلا"
+  },
+  "year": "2023",
+  "location": {
+    "en": "United Arab Emirates",
+    "ar": "الإمارات العربية المتحدة"
+  },
+  "line": {
+    "en": "Indoor-outdoor living that follows the sun through the day.",
+    "ar": "عيش داخلي-خارجي يتتبّع الشمس على مدار اليوم."
+  },
+  "brief": {
+    "en": "A villa with generous glazing and a pool that deserved a better relationship with the rooms around it. We aligned materials inside and out so the garden reads as one more room.",
+    "ar": "فيلا بواجهات زجاجية واسعة ومسبح يستحق علاقة أفضل بالغرف المحيطة. وحّدنا الخامات في الداخل والخارج لتُقرأ الحديقة غرفةً إضافية."
+  },
+  "scope": [
+    {
+      "en": "Concept & materials",
+      "ar": "المفهوم والخامات"
+    },
+    {
+      "en": "Outdoor furniture",
+      "ar": "أثاث خارجي"
+    },
+    {
+      "en": "Joinery",
+      "ar": "نجارة"
+    },
+    {
+      "en": "Lighting design",
+      "ar": "تصميم الإضاءة"
+    },
+    {
+      "en": "Project management",
+      "ar": "إدارة المشروع"
+    }
+  ],
+  "heroImage": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc",
+  "cardImage": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc",
+  "pairs": [
+    {
+      "caption": {
+        "en": "Pool terrace",
+        "ar": "تراس المسبح"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc"
+    },
+    {
+      "caption": {
+        "en": "The elevation",
+        "ar": "الواجهة"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+    },
+    {
+      "caption": {
+        "en": "Living view",
+        "ar": "إطلالة المعيشة"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+    }
+  ]
+}

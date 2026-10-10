@@ -1,0 +1,10 @@
+---
+import { imgSrc } from '../lib/img';
+interface Props { src: string; alt?: string; width?: number; lazy?: boolean; class?: string; }
+const { src, alt = '', width = 1200, lazy = true, class: cls } = Astro.props;
+const small = Math.max(600, Math.round(width / 2));
+const srcset = (src.includes('images.unsplash.com') || src.startsWith('/uploads/'))
+  ? `${imgSrc(src, small)} ${small}w, ${imgSrc(src, width)} ${width}w`
+  : undefined;
+---
+<img src={imgSrc(src, width)} srcset={srcset} sizes={srcset ? '(max-width: 760px) 100vw, 60vw' : undefined} alt={alt} class={cls} loading={lazy ? 'lazy' : 'eager'} decoding="async" />

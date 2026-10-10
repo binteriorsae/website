@@ -1,0 +1,21 @@
+---
+// The root address just forwards visitors to a language. Arabic browsers go to /ar/.
+import { href } from '../lib/site';
+const en = href('en');
+const ar = href('ar');
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <title>B Interiors</title>
+  <link rel="canonical" href={en} />
+  <meta http-equiv="refresh" content={`0; url=${en}`} />
+  <script is:inline define:vars={{ en, ar }}>
+    var l = (navigator.language || '').toLowerCase();
+    location.replace(l.indexOf('ar') === 0 ? ar : en);
+  </script>
+</head>
+<body><p><a href={en}>English</a> · <a href={ar}>العربية</a></p></body>
+</html>

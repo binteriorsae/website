@@ -1,0 +1,144 @@
+{
+  "header": {
+    "eyebrow": {
+      "en": "About",
+      "ar": "نبذة"
+    },
+    "title": {
+      "en": "Hello, I’m *Bayan.*",
+      "ar": "مرحبًا، أنا *بيان.*"
+    },
+    "lead": {
+      "en": "Interior designer, space-maker and founder of B Interiors.",
+      "ar": "تصميم داخلي وصناعة مساحات — خلف B Interiors."
+    },
+    "photo": "https://images.unsplash.com/photo-1631679706909-1844bbd07221"
+  },
+  "story": {
+    "photo": "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e",
+    "photoAlt": {
+      "en": "Interior detail",
+      "ar": "تفصيل داخلي"
+    },
+    "caption": {
+      "en": "Bayan Jijakli",
+      "ar": "بيان جيجكلي"
+    },
+    "eyebrow": {
+      "en": "My Story",
+      "ar": "قصتي"
+    },
+    "title": {
+      "en": "Design is how a space *makes you feel.*",
+      "ar": "التصميم هو الشعور الذي *تمنحه المساحة.*"
+    },
+    "paragraphs": [
+      {
+        "en": "I believe the best interiors aren’t loud — they’re felt. They hold you the moment you walk in. That belief shapes every project I take on at B Interiors.",
+        "ar": "أؤمن بأن أجمل المساحات ليست الصاخبة، بل التي تُحَسّ. تحتضنك منذ لحظة دخولك. هذا الإيمان يوجّه كل مشروع أتولّاه في B Interiors."
+      },
+      {
+        "en": "With years of experience designing homes and commercial spaces, I work closely with each client to understand how they live, what they love, and what they need — then translate that into a space that is refined, functional and unmistakably theirs.",
+        "ar": "بخبرة سنوات في تصميم البيوت والمساحات التجارية، أعمل عن قرب مع كل عميل لأفهم كيف يعيش وما يحب وما يحتاج، ثم أحوّل ذلك إلى مساحة راقية وعملية وتشبهه تمامًا."
+      },
+      {
+        "en": "I stay hands-on from first concept to final styling, so the vision you approve is the one that gets delivered.",
+        "ar": "أتابع كل مرحلة بنفسي، من أول فكرة حتى اللمسة الأخيرة، لتصلك الرؤية التي اعتمدتها كما هي."
+      }
+    ]
+  },
+  "principles": {
+    "eyebrow": {
+      "en": "What guides every project",
+      "ar": "ما يوجّه كل مشروع"
+    },
+    "title": {
+      "en": "Three *principles*",
+      "ar": "ثلاثة *مبادئ*"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Timeless over trendy",
+          "ar": "الخلود قبل الموضة"
+        },
+        "text": {
+          "en": "Classic proportions, honest materials and a restrained palette — spaces that stay beautiful for decades, not seasons.",
+          "ar": "نِسَب كلاسيكية وخامات أصيلة ولوحة ألوان هادئة — مساحات تبقى جميلة لعقود لا لمواسم."
+        }
+      },
+      {
+        "title": {
+          "en": "Personal by design",
+          "ar": "شخصي بالتصميم"
+        },
+        "text": {
+          "en": "Every brief begins with listening. Your routines, your taste and your story shape the result — never a formula.",
+          "ar": "كل مشروع يبدأ بالإصغاء. روتينك وذوقك وقصتك هي ما يصوغ النتيجة — لا قالب جاهز."
+        }
+      },
+      {
+        "title": {
+          "en": "Detail, always",
+          "ar": "التفاصيل دائمًا"
+        },
+        "text": {
+          "en": "From joinery lines to the way light falls at 5pm, the small decisions are what elevate a room from nice to remarkable.",
+          "ar": "من خطوط النجارة إلى سقوط الضوء عند الخامسة مساءً، القرارات الصغيرة هي التي ترتقي بالغرفة من جميلة إلى مدهشة."
+        }
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": {
+      "en": "How We Work",
+      "ar": "كيف نعمل"
+    },
+    "title": {
+      "en": "A clear, calm *process*",
+      "ar": "عملية *واضحة* وهادئة"
+    },
+    "steps": [
+      {
+        "title": {
+          "en": "Discover",
+          "ar": "اكتشاف"
+        },
+        "text": {
+          "en": "We talk through your space, lifestyle, taste and budget to define the brief.",
+          "ar": "نتحدث عن مساحتك ونمط حياتك وذوقك وميزانيتك لنحدد المطلوب."
+        }
+      },
+      {
+        "title": {
+          "en": "Design",
+          "ar": "تصميم"
+        },
+        "text": {
+          "en": "Concept boards, layouts, materials and 3D visuals — refined until it feels right.",
+          "ar": "لوحات أفكار ومخططات وخامات وتصورات ثلاثية الأبعاد — نصقلها حتى تبدو في مكانها الصحيح."
+        }
+      },
+      {
+        "title": {
+          "en": "Deliver",
+          "ar": "تنفيذ"
+        },
+        "text": {
+          "en": "Sourcing, procurement and site coordination with trusted craftspeople.",
+          "ar": "توريد وشراء وتنسيق في الموقع مع حِرفيين موثوقين."
+        }
+      },
+      {
+        "title": {
+          "en": "Style",
+          "ar": "تنسيق"
+        },
+        "text": {
+          "en": "The final layer — art, textiles, objects — and the space is ready to live in.",
+          "ar": "الطبقة الأخيرة — الفن والأقمشة والقطع — وتصبح المساحة جاهزة للعيش."
+        }
+      }
+    ]
+  }
+}

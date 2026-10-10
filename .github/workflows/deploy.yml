@@ -1,0 +1,57 @@
+name: Build and publish the site
+
+# Runs every time content or code is saved to the main branch
+# (including saves made from the TinaCMS editing screen).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # TinaCMS keys: added once under Settings > Secrets and variables > Actions
+      TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+      TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+      # Settings > Secrets and variables > Actions > Variables (all optional)
+      PUBLIC_NOINDEX: ${{ vars.PUBLIC_NOINDEX || 'true' }}
+      SITE_URL: ${{ vars.SITE_URL || 'https://binteriorsae.github.io' }}
+      BASE_PATH: ${{ vars.BASE_PATH || '/website' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Build
+        run: |
+          if [ -z "$TINA_PUBLIC_CLIENT_ID" ]; then
+            echo "Tina Cloud keys not set yet: building the site without the editing screen."
+            npm run build:site
+          else
+            npm run build:ci
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

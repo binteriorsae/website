@@ -1,0 +1,75 @@
+{
+  "order": 4,
+  "name": {
+    "en": "The Gold Room",
+    "ar": "الغرفة الذهبية"
+  },
+  "category": "residential",
+  "property": {
+    "en": "Penthouse",
+    "ar": "بنتهاوس"
+  },
+  "year": "2024",
+  "location": {
+    "en": "United Arab Emirates",
+    "ar": "الإمارات العربية المتحدة"
+  },
+  "line": {
+    "en": "A penthouse suite layered in linen, leather and golden light.",
+    "ar": "جناح بنتهاوس بطبقات من الكتان والجلد والضوء الذهبي."
+  },
+  "brief": {
+    "en": "The owner asked for a hotel-calm bedroom with a personal edge. We kept the palette quiet, added one rich colour moment and invested in textiles you want to touch.",
+    "ar": "طلب المالك غرفة نوم بهدوء الفنادق مع لمسة شخصية. حافظنا على لوحة ألوان هادئة وأضفنا لحظة لونية غنية واستثمرنا في أقمشة تغري باللمس."
+  },
+  "scope": [
+    {
+      "en": "Space planning",
+      "ar": "تخطيط المساحات"
+    },
+    {
+      "en": "Bespoke headboard",
+      "ar": "لوح رأس السرير خاص"
+    },
+    {
+      "en": "Textiles & bedding",
+      "ar": "الأقمشة والمفروشات"
+    },
+    {
+      "en": "Lighting design",
+      "ar": "تصميم الإضاءة"
+    },
+    {
+      "en": "Styling",
+      "ar": "التنسيق"
+    }
+  ],
+  "heroImage": "https://images.unsplash.com/photo-1540518614846-7eded433c457",
+  "cardImage": "https://images.unsplash.com/photo-1540518614846-7eded433c457",
+  "pairs": [
+    {
+      "caption": {
+        "en": "Main bedroom",
+        "ar": "غرفة النوم الرئيسية"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1540518614846-7eded433c457"
+    },
+    {
+      "caption": {
+        "en": "Guest suite",
+        "ar": "جناح الضيوف"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+    },
+    {
+      "caption": {
+        "en": "Dressing area",
+        "ar": "منطقة الملابس"
+      },
+      "before": "",
+      "after": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+    }
+  ]
+}

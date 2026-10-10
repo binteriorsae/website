@@ -1,0 +1,74 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Img from '../../../components/Img.astro';
+import { LANGS, tx, rich, plain, type Lang } from '../../../lib/i18n';
+import { href } from '../../../lib/site';
+import { projects, categoryLabel } from '../../../lib/projects';
+import ui from '../../../../content/ui.json';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) => projects.map((p, i) => ({
+    params: { lang, slug: p.slug },
+    props: { project: p, prev: projects[(i - 1 + projects.length) % projects.length], next: projects[(i + 1) % projects.length] },
+  })));
+}
+const lang = Astro.params.lang as Lang;
+const { project: p, prev, next } = Astro.props as any;
+const U = ui.projects;
+const ghost = plain(tx(p.name, lang)).replace(/^(The |ال)/i, '').charAt(0);
+const arrowPrev = lang === 'ar' ? '→' : '←';
+const arrowNext = lang === 'ar' ? '←' : '→';
+---
+<Base lang={lang} title={`${tx(p.name, lang)} — B Interiors`} description={tx(p.line, lang)} path={`projects/${p.slug}/`} section="portfolio" scripts={['ba.js']}>
+  <section class="phero">
+    <Img class="bg" src={p.heroImage} alt={tx(p.name, lang)} width={1800} lazy={false} /><div class="shade"></div><div class="ghost">{ghost}</div>
+    <div class="wrap">
+      <div class="eyebrow rv">{categoryLabel(p.category, lang)} · {tx(p.property, lang)} · {p.year}</div>
+      <h1 class="rv">{tx(p.name, lang)}</h1>
+      <p class="rv">{tx(p.line, lang)}</p>
+      <a class="back rv" href={href(lang, 'portfolio/')}>{arrowPrev} {tx(U.allProjects, lang)}</a>
+    </div>
+  </section>
+
+  <section class="pv"><div class="wrap pv-grid">
+    <div>
+      <div class="eyebrow rv">{tx(U.brief, lang)}</div>
+      <h2 class="rv" set:html={rich(tx(U.briefTitle, lang))} />
+      <p class="rv">{tx(p.brief, lang)}</p>
+    </div>
+    <dl class="rv">
+      <div><dt>{tx(U.type, lang)}</dt><dd>{categoryLabel(p.category, lang)}</dd></div>
+      <div><dt>{tx(U.property, lang)}</dt><dd>{tx(p.property, lang)}</dd></div>
+      <div><dt>{tx(U.year, lang)}</dt><dd>{p.year}</dd></div>
+      <div><dt>{tx(U.location, lang)}</dt><dd>{tx(p.location, lang)}</dd></div>
+      <div><dt>{tx(U.scope, lang)}</dt><dd class="scope">{p.scope.map((x: any) => <>{tx(x, lang)}<br /></>)}</dd></div>
+    </dl>
+  </div></section>
+
+  {p.pairs?.length > 0 && (
+    <section class="pg"><div class="wrap">
+      <div class="eyebrow rv">{tx(U.beforeAfter, lang)}</div>
+      <h2 class="rv" set:html={rich(tx(U.transformation, lang))} />
+      <p class="pg-intro rv">{tx(U.beforeAfterIntro, lang)}</p>
+      <div class="ba-grid">
+        {p.pairs.map((pair: any, i: number) => (
+          <figure class={`ba-fig${i === 0 ? ' wide' : ''} rv`}>
+            <div class="ba" style="--pos:50%">
+              <Img class="after" src={pair.after} alt={`${tx(pair.caption, lang)} — ${tx(U.after, lang)}`} width={i === 0 ? 1800 : 1200} />
+              <Img class="before" src={pair.before || pair.after} alt={`${tx(pair.caption, lang)} — ${tx(U.before, lang)}`} width={i === 0 ? 1800 : 1200} />
+              <span class="lab b">{tx(U.before, lang)}</span><span class="lab a">{tx(U.after, lang)}</span>
+              <div class="handle"></div>
+              <input type="range" min="0" max="100" value="50" aria-label={`${tx(U.drag, lang)}: ${tx(pair.caption, lang)}`} />
+            </div>
+            <figcaption><span>{tx(pair.caption, lang)}</span><span class="hint">{tx(U.drag, lang)}</span></figcaption>
+          </figure>
+        ))}
+      </div>
+    </div></section>
+  )}
+
+  <section class="pn-sec"><div class="wrap pn">
+    <a href={href(lang, `projects/${prev.slug}/`)}><small>{arrowPrev} {tx(U.previous, lang)}</small><span>{tx(prev.name, lang)}</span></a>
+    <a class="next" href={href(lang, `projects/${next.slug}/`)}><small>{tx(U.next, lang)} {arrowNext}</small><span>{tx(next.name, lang)}</span></a>
+  </div></section>
+</Base>

@@ -1,0 +1,146 @@
+{
+  "header": {
+    "eyebrow": {
+      "en": "Services",
+      "ar": "الخدمات"
+    },
+    "title": {
+      "en": "Tailored to *you*, start to finish.",
+      "ar": "مصمَّمة *لك*، من البداية إلى النهاية."
+    },
+    "lead": {
+      "en": "Whether you need a full transformation or a trusted second opinion, there’s a way to work together.",
+      "ar": "سواء احتجت إلى تحوّل كامل أو إلى رأي خبير موثوق، هناك طريقة للعمل معًا."
+    }
+  },
+  "items": [
+    {
+      "title": {
+        "en": "Residential Design",
+        "ar": "التصميم السكني"
+      },
+      "description": {
+        "en": "Complete interior design for villas, apartments and penthouses — from layout and finishes to lighting and furnishings.",
+        "ar": "تصميم داخلي متكامل للفلل والشقق والبنتهاوس — من التخطيط والتشطيبات إلى الإضاءة والأثاث."
+      },
+      "scope": [
+        {
+          "en": "Space planning & layouts",
+          "ar": "تخطيط المساحات والمخططات"
+        },
+        {
+          "en": "Concept & mood boards",
+          "ar": "المفاهيم ولوحات الأفكار"
+        },
+        {
+          "en": "3D visualisation",
+          "ar": "تصورات ثلاثية الأبعاد"
+        },
+        {
+          "en": "Joinery & bespoke furniture design",
+          "ar": "النجارة وتصميم الأثاث الخاص"
+        },
+        {
+          "en": "Material & colour selection",
+          "ar": "اختيار الخامات والألوان"
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Commercial Interiors",
+        "ar": "المساحات التجارية"
+      },
+      "description": {
+        "en": "Welcoming, brand-led environments for boutiques, offices, restaurants and clinics that leave a lasting impression.",
+        "ar": "بيئات مرحِّبة تعبّر عن العلامة التجارية للبوتيكات والمكاتب والمطاعم والعيادات، وتترك أثرًا يدوم."
+      },
+      "scope": [
+        {
+          "en": "Brand-aligned concepts",
+          "ar": "مفاهيم متوافقة مع العلامة"
+        },
+        {
+          "en": "Functional space planning",
+          "ar": "تخطيط وظيفي للمساحة"
+        },
+        {
+          "en": "Lighting design",
+          "ar": "تصميم الإضاءة"
+        },
+        {
+          "en": "FF&E specification",
+          "ar": "مواصفات الأثاث والتجهيزات"
+        },
+        {
+          "en": "Site supervision",
+          "ar": "الإشراف على الموقع"
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Styling & Furnishing",
+        "ar": "التنسيق والتأثيث"
+      },
+      "description": {
+        "en": "The finishing touches. Sourcing furniture, art, rugs and accessories to complete a room with warmth and personality.",
+        "ar": "اللمسات الأخيرة. اختيار الأثاث والفن والسجاد والإكسسوارات لإكمال الغرفة بدفء وشخصية."
+      },
+      "scope": [
+        {
+          "en": "Furniture sourcing",
+          "ar": "اختيار الأثاث"
+        },
+        {
+          "en": "Art & accessory curation",
+          "ar": "انتقاء الأعمال الفنية والإكسسوارات"
+        },
+        {
+          "en": "Soft furnishings",
+          "ar": "المفروشات الناعمة"
+        },
+        {
+          "en": "Installation & styling day",
+          "ar": "يوم التركيب والتنسيق"
+        },
+        {
+          "en": "Refresh of existing rooms",
+          "ar": "تجديد الغرف القائمة"
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Design Consultation",
+        "ar": "استشارة التصميم"
+      },
+      "description": {
+        "en": "One-to-one guidance for those who want expert direction — in-person or online — and the confidence to do the rest.",
+        "ar": "إرشاد فردي لمن يريد توجيهًا خبيرًا — حضوريًا أو عبر الإنترنت — وثقة لإكمال الباقي بنفسه."
+      },
+      "scope": [
+        {
+          "en": "On-site or virtual sessions",
+          "ar": "جلسات في الموقع أو عن بُعد"
+        },
+        {
+          "en": "Written recommendations",
+          "ar": "توصيات مكتوبة"
+        },
+        {
+          "en": "Colour & layout advice",
+          "ar": "نصائح الألوان والتخطيط"
+        },
+        {
+          "en": "Shopping lists",
+          "ar": "قوائم التسوّق"
+        },
+        {
+          "en": "Project reviews",
+          "ar": "مراجعة المشاريع"
+        }
+      ]
+    }
+  ]
+}

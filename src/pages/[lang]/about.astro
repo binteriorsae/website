@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import Img from '../../components/Img.astro';
+import { LANGS, tx, rich, plain, type Lang } from '../../lib/i18n';
+import { href } from '../../lib/site';
+import about from '../../../content/about.json';
+import ui from '../../../content/ui.json';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const { header, story, principles, process } = about;
+const ghost = lang === 'ar' ? 'ب' : 'B';
+---
+<Base lang={lang} title={`${plain(tx(header.title, lang))} — B Interiors`} description={tx(header.lead, lang)} path="about/" section="about">
+  <section class="phero">
+    <Img class="bg" src={header.photo} width={1800} lazy={false} /><div class="shade"></div><div class="ghost">{ghost}</div>
+    <div class="wrap">
+      <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
+      <h1 class="rv" set:html={rich(tx(header.title, lang))} />
+      <p class="rv">{tx(header.lead, lang)}</p>
+    </div>
+  </section>
+
+  <section><div class="wrap split">
+    <div class="rv"><div class="frame"><Img src={story.photo} alt={tx(story.photoAlt, lang)} width={1000} /><div class="cap">{tx(story.caption, lang)}</div></div></div>
+    <div>
+      <div class="eyebrow rv">{tx(story.eyebrow, lang)}</div>
+      <h2 class="rv" set:html={rich(tx(story.title, lang))} />
+      {story.paragraphs.map((p) => <p class="rv">{tx(p, lang)}</p>)}
+      <a class="btn rv" style="margin-top:40px" href={href(lang, 'contact/')}>{tx(ui.buttons.workWithMe, lang)} <span class="arr"></span></a>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="eyebrow rv">{tx(principles.eyebrow, lang)}</div>
+    <h2 class="rv" set:html={rich(tx(principles.title, lang))} />
+    <div class="values">
+      {principles.items.map((i) => <div class="value rv"><h3>{tx(i.title, lang)}</h3><p>{tx(i.text, lang)}</p></div>)}
+    </div>
+  </div></section>
+
+  <section class="process"><div class="wrap">
+    <div class="eyebrow rv">{tx(process.eyebrow, lang)}</div>
+    <h2 class="rv" set:html={rich(tx(process.title, lang))} />
+    <div class="steps">
+      {process.steps.map((st, i) => <div class="step rv"><div class="n">{String(i + 1).padStart(2, '0')}</div><h3>{tx(st.title, lang)}</h3><p>{tx(st.text, lang)}</p></div>)}
+    </div>
+  </div></section>
+</Base>

@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import { LANGS, tx, rich, plain, type Lang } from '../../lib/i18n';
+import services from '../../../content/services.json';
+
+export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const { header, items } = services;
+const ghost = lang === 'ar' ? 'خ' : 'S';
+---
+<Base lang={lang} title={`${plain(tx(header.eyebrow, lang))} — B Interiors`} description={tx(header.lead, lang)} path="services/" section="services" bodyClass="svc-page">
+  <section class="phero sv-hero"><div class="ghost">{ghost}</div><div class="wrap">
+    <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
+    <h1 class="rv" set:html={rich(tx(header.title, lang))} />
+    <p class="rv">{tx(header.lead, lang)}</p>
+  </div></section>
+
+  <section class="sv"><div class="wrap">
+    <div class="sv-list">
+      {items.map((s, i) => (
+        <details class="sv-row rv" name="service" open={i === 0}>
+          <summary><span class="no">{String(i + 1).padStart(2, '0')}</span><span class="ttl">{tx(s.title, lang)}</span><span class="plus" aria-hidden="true"></span></summary>
+          <div class="sv-body"><p>{tx(s.description, lang)}</p><ul>{s.scope.map((x) => <li>{tx(x, lang)}</li>)}</ul></div>
+        </details>
+      ))}
+    </div>
+  </div></section>
+
+  <script is:inline>
+    // keep one service open at a time (fallback for browsers without exclusive <details name>)
+    (function(){var d=[].slice.call(document.querySelectorAll('.sv-row'));d.forEach(function(x){x.addEventListener('toggle',function(){if(x.open)d.forEach(function(y){if(y!==x)y.open=false;});});});})();
+  </script>
+</Base>

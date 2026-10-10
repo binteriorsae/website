@@ -1,0 +1,26 @@
+{
+  "name": "binteriors-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run images && tinacms dev -c \"astro dev\"",
+    "dev:site": "astro dev",
+    "images": "node scripts/optimize-images.mjs",
+    "build": "node scripts/optimize-images.mjs && tinacms build --skip-cloud-checks && astro build",
+    "build:ci": "node scripts/optimize-images.mjs && tinacms build && astro build",
+    "build:site": "node scripts/optimize-images.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@tinacms/cli": "^3.0.0",
+    "astro": "^5.18.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.5",
+    "tinacms": "^3.14.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
