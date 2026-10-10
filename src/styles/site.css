@@ -425,3 +425,12 @@ body.svc-page header.site:not(.solid) .burger span{background:var(--ink)}
 .card .frame .meta h3{font-size:clamp(26px,2.6vw,36px);line-height:1.1;color:#fff}
 .card .frame .meta span{display:block;margin-top:8px;color:rgba(255,255,255,.82)}
 @media(max-width:560px){.card .frame{padding:0 40px 52px}}
+
+/* Home page, desktop: the menu sits on its own solid bar and the split hero starts below it,
+   so the edge of the photo panel never runs behind the menu links. */
+@media(min-width:981px){
+  body.home header.site{background:var(--paper);box-shadow:0 1px 0 var(--line);padding:14px 0}
+  body.home header.site .brand-logo{height:46px!important;width:46px!important}
+  body.home .hero{margin-top:74px;min-height:calc(100vh - 74px)}
+  body.home .hero .left{padding-top:70px;padding-bottom:70px}
+}
