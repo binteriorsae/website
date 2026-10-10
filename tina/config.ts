@@ -167,6 +167,7 @@ export default defineConfig({
         bi('footerAbout', 'Short text in the footer', { long: true }),
         bi('siteTitle', 'Website name shown in the browser tab and Google'),
         bi('siteDescription', 'Short description for Google', { long: true }),
+        image('ogImage', 'Picture shown when the site is shared (WhatsApp, Instagram, Google)', 'A wide photo, at least 1200 pixels across.'),
         { type: 'string', name: 'formEndpoint', label: 'Contact form address (set up once, then leave alone)',
           description: 'The link given by the form service so enquiries reach your email.' },
       ]),
