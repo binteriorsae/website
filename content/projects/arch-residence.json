@@ -52,24 +52,24 @@
         "en": "Garden terrace",
         "ar": "تراس الحديقة"
       },
-      "before": "",
-      "after": "https://images.unsplash.com/photo-1600573472592-401b489a3cdc"
+      "before": "/uploads/photo-1600573472592-401b489a3cdc.jpeg",
+      "after": "/uploads/photo-1600573472592-401b489a3cdc.jpeg"
     },
     {
       "caption": {
         "en": "The façade",
         "ar": "الواجهة"
       },
-      "before": "",
-      "after": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+      "before": "/uploads/photo-1600585154340-be6161a56a0c.jpeg",
+      "after": "/uploads/photo-1600585154340-be6161a56a0c.jpeg"
     },
     {
       "caption": {
         "en": "Entrance court",
         "ar": "فناء المدخل"
       },
-      "before": "",
-      "after": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3"
+      "before": "/uploads/photo-1600566753190-17f0baa2a6c3.jpeg",
+      "after": "/uploads/photo-1600566753190-17f0baa2a6c3.jpeg"
     },
     {
       "caption": {
@@ -78,6 +78,21 @@
       },
       "before": "/uploads/garden.jpeg",
       "after": "/uploads/garden.jpeg"
+    },
+    {
+      "after": "/uploads/5.avif"
+    },
+    {
+      "after": "/uploads/6.avif"
+    },
+    {
+      "after": "/uploads/7.avif"
+    },
+    {
+      "after": "/uploads/8.avif"
+    },
+    {
+      "after": "/uploads/9.avif"
     }
   ]
 }
