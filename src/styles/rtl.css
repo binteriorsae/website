@@ -3,7 +3,8 @@
 .lang-switch::after{display:none!important}
 
 /* ======================= Arabic typography ======================= */
-html[lang="ar"]{--serif:'Amiri','Cormorant Garamond',Georgia,serif;--sans:'Tajawal','Montserrat',system-ui,sans-serif}
+/* one Arabic family for headings and body: Tajawal (Regular) */
+html[lang="ar"]{--serif:'Tajawal','Segoe UI',Tahoma,sans-serif;--sans:'Tajawal','Segoe UI',Tahoma,sans-serif}
 html[lang="ar"] body{font-weight:400;line-height:1.95;font-size:16px}
 /* letter-spacing breaks the joined Arabic letters, so switch it off */
 html[lang="ar"] *{letter-spacing:0!important}
