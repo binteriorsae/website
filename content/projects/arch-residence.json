@@ -73,10 +73,10 @@
     },
     {
       "caption": {
-        "en": "Test",
+        "en": "Restaurant",
         "ar": "Test"
       },
-      "before": "/uploads/garden.jpeg",
+      "before": "",
       "after": "/uploads/garden.jpeg"
     },
     {
