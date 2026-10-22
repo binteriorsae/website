@@ -7,9 +7,9 @@
     "dev": "npm run images && tinacms dev -c \"astro dev\"",
     "dev:site": "astro dev",
     "images": "node scripts/optimize-images.mjs",
-    "build": "node scripts/optimize-images.mjs && tinacms build --skip-cloud-checks && astro build",
-    "build:ci": "node scripts/optimize-images.mjs && tinacms build && astro build",
-    "build:site": "node scripts/optimize-images.mjs && astro build",
+    "build": "node scripts/optimize-images.mjs && tinacms build --skip-cloud-checks && astro build && node scripts/clean-dist.mjs",
+    "build:ci": "node scripts/optimize-images.mjs && tinacms build && astro build && node scripts/clean-dist.mjs",
+    "build:site": "node scripts/optimize-images.mjs && astro build && node scripts/clean-dist.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

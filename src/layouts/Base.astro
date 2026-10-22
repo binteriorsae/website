@@ -1,7 +1,7 @@
 ---
 import '../styles/site.css';
 import '../styles/rtl.css';
-import { LANGS, DIR, LANG_NAME, other, tx, type Lang } from '../lib/i18n';
+import { LANGS, DIR, LANG_NAME, other, tx, list, type Lang } from '../lib/i18n';
 import { asset, href } from '../lib/site';
 import { imgSrc } from '../lib/img';
 import site from '../../content/site.json';
@@ -101,11 +101,11 @@ const jsonLd = {
         {nav.map(([key, p]) => <li><a href={href(lang, p)}>{tx((ui.nav as any)[key], lang)}</a></li>)}
       </ul></div>
       <div><h4>{tx(ui.footer.services, lang)}</h4><ul>
-        {services.items.map((s) => <li><a href={href(lang, 'services/')}>{tx(s.title, lang)}</a></li>)}
+        {list(services.items).map((s: any) => <li><a href={href(lang, 'services/')}>{tx(s.title, lang)}</a></li>)}
       </ul></div>
       <div><h4>{tx(ui.footer.contact, lang)}</h4><ul>
         <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-        <li><a href={`tel:${site.phone.replace(/\s/g, '')}`} dir="ltr">{site.phone}</a></li>
+        <li><a href={`tel:${(site.phone ?? '').replace(/\s/g, '')}`} dir="ltr">{site.phone}</a></li>
         <li>{tx(site.location, lang)}</li>
         <li><a href={site.instagramUrl} dir="ltr">{site.instagramLabel}</a></li>
       </ul></div>

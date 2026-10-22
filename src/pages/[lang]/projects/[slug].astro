@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Img from '../../../components/Img.astro';
-import { LANGS, tx, rich, plain, type Lang } from '../../../lib/i18n';
+import { LANGS, tx, rich, plain, list, type Lang } from '../../../lib/i18n';
 import { href } from '../../../lib/site';
 import { imgSrc } from '../../../lib/img';
 import { projects, categoryLabel } from '../../../lib/projects';
@@ -22,7 +22,7 @@ const arrowNext = lang === 'ar' ? '←' : '→';
 
 // Photos 1-5 form the main gallery; from the 6th onwards they go into a smaller grid with a viewer.
 const MAIN = 5;
-const pairs: any[] = p.pairs || [];
+const pairs: any[] = list(p.pairs);
 const featured = pairs.slice(0, MAIN);
 const more = pairs.slice(MAIN);
 const hasSlider = featured.some((x: any) => x.before);
@@ -55,7 +55,7 @@ const galleryData = more.map((x: any) => ({
       <div><dt>{tx(U.property, lang)}</dt><dd>{tx(p.property, lang)}</dd></div>
       <div><dt>{tx(U.year, lang)}</dt><dd>{p.year}</dd></div>
       <div><dt>{tx(U.location, lang)}</dt><dd>{tx(p.location, lang)}</dd></div>
-      <div><dt>{tx(U.scope, lang)}</dt><dd class="scope">{p.scope.map((x: any) => <>{tx(x, lang)}<br /></>)}</dd></div>
+      <div><dt>{tx(U.scope, lang)}</dt><dd class="scope">{list(p.scope).map((x: any) => <>{tx(x, lang)}<br /></>)}</dd></div>
     </dl>
   </div></section>
 

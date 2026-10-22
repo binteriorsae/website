@@ -13,7 +13,7 @@ export function imgSrc(src: string, width = 1200): string {
   if (src.includes('images.unsplash.com')) {
     return `${src.split('?')[0]}?w=${width}&q=75&auto=format&fit=crop`;
   }
-  if (src.startsWith('/uploads/') && /\.(jpe?g|png|webp)$/i.test(src)) {
+  if (src.startsWith('/uploads/') && /\.(jpe?g|png|webp|avif)$/i.test(src)) {
     const size = SIZES.find((s) => s >= width) ?? SIZES[SIZES.length - 1];
     const name = src.replace(/^\/uploads\//, '').replace(/\.[^.]+$/, '');
     return asset(`uploads/_opt/${name}-${size}.webp`);
