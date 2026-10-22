@@ -9,7 +9,7 @@ import ui from '../../../content/ui.json';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
 const lang = Astro.params.lang as Lang;
-const { header } = portfolio;
+const header: any = portfolio.header ?? {};
 const cols = ['c-a', 'c-b', 'c-c', 'c-d', 'c-e', 'c-f'];
 const cats = ['all', 'residential', 'commercial', 'styling'];
 const ghost = lang === 'ar' ? 'ع' : 'P';

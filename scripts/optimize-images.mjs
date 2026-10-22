@@ -14,7 +14,7 @@ fs.mkdirSync(OUT, { recursive: true });
 const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
   const p = path.join(dir, e.name);
   if (e.isDirectory()) return p === OUT ? [] : walk(p);
-  return /\.(jpe?g|png|webp)$/i.test(e.name) ? [p] : [];
+  return /\.(jpe?g|png|webp|avif)$/i.test(e.name) ? [p] : [];
 });
 
 let made = 0;
@@ -24,8 +24,14 @@ for (const file of walk(SRC)) {
     const out = path.join(OUT, `${rel}-${w}.webp`);
     if (fs.existsSync(out) && fs.statSync(out).mtimeMs >= fs.statSync(file).mtimeMs) continue;
     fs.mkdirSync(path.dirname(out), { recursive: true });
-    await sharp(file).rotate().resize({ width: w, withoutEnlargement: true }).webp({ quality: 78 }).toFile(out);
-    made++;
+    try {
+      await sharp(file).rotate().resize({ width: w, withoutEnlargement: true }).webp({ quality: 78 }).toFile(out);
+      made++;
+    } catch (err) {
+      // a damaged or unsupported photo should not stop the whole site from building
+      console.warn(`WARNING: could not resize ${file}: ${err.message}`);
+      break;
+    }
   }
 }
 console.log(`Image optimisation done (${made} new file${made === 1 ? '' : 's'}).`);

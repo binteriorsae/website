@@ -1,14 +1,14 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Img from '../../components/Img.astro';
-import { LANGS, tx, rich, plain, type Lang } from '../../lib/i18n';
+import { LANGS, tx, rich, plain, list, type Lang } from '../../lib/i18n';
 import { href } from '../../lib/site';
 import about from '../../../content/about.json';
 import ui from '../../../content/ui.json';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
 const lang = Astro.params.lang as Lang;
-const { header, story, principles, process } = about;
+const header: any = about.header ?? {}, story: any = about.story ?? {}, principles: any = about.principles ?? {}, process: any = about.process ?? {};
 const ghost = lang === 'ar' ? 'ب' : 'B';
 ---
 <Base lang={lang} title={`${plain(tx(header.title, lang))} — B Interiors`} description={tx(header.lead, lang)} path="about/" section="about">
@@ -26,7 +26,7 @@ const ghost = lang === 'ar' ? 'ب' : 'B';
     <div>
       <div class="eyebrow rv">{tx(story.eyebrow, lang)}</div>
       <h2 class="rv" set:html={rich(tx(story.title, lang))} />
-      {story.paragraphs.map((p) => <p class="rv">{tx(p, lang)}</p>)}
+      {list(story.paragraphs).map((p: any) => <p class="rv">{tx(p, lang)}</p>)}
       <a class="btn rv" style="margin-top:40px" href={href(lang, 'contact/')}>{tx(ui.buttons.workWithMe, lang)} <span class="arr"></span></a>
     </div>
   </div></section>
@@ -35,7 +35,7 @@ const ghost = lang === 'ar' ? 'ب' : 'B';
     <div class="eyebrow rv">{tx(principles.eyebrow, lang)}</div>
     <h2 class="rv" set:html={rich(tx(principles.title, lang))} />
     <div class="values">
-      {principles.items.map((i) => <div class="value rv"><h3>{tx(i.title, lang)}</h3><p>{tx(i.text, lang)}</p></div>)}
+      {list(principles.items).map((i: any) => <div class="value rv"><h3>{tx(i.title, lang)}</h3><p>{tx(i.text, lang)}</p></div>)}
     </div>
   </div></section>
 
@@ -43,7 +43,7 @@ const ghost = lang === 'ar' ? 'ب' : 'B';
     <div class="eyebrow rv">{tx(process.eyebrow, lang)}</div>
     <h2 class="rv" set:html={rich(tx(process.title, lang))} />
     <div class="steps">
-      {process.steps.map((st, i) => <div class="step rv"><div class="n">{String(i + 1).padStart(2, '0')}</div><h3>{tx(st.title, lang)}</h3><p>{tx(st.text, lang)}</p></div>)}
+      {list(process.steps).map((st: any, i: number) => <div class="step rv"><div class="n">{String(i + 1).padStart(2, '0')}</div><h3>{tx(st.title, lang)}</h3><p>{tx(st.text, lang)}</p></div>)}
     </div>
   </div></section>
 </Base>

@@ -1,11 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { LANGS, tx, rich, plain, type Lang } from '../../lib/i18n';
+import { LANGS, tx, rich, plain, list, type Lang } from '../../lib/i18n';
 import services from '../../../content/services.json';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
 const lang = Astro.params.lang as Lang;
-const { header, items } = services;
+const header: any = services.header ?? {};
+const items: any[] = list(services.items);
 const ghost = lang === 'ar' ? 'خ' : 'S';
 ---
 <Base lang={lang} title={`${plain(tx(header.eyebrow, lang))} — B Interiors`} description={tx(header.lead, lang)} path="services/" section="services" bodyClass="svc-page">
@@ -20,7 +21,7 @@ const ghost = lang === 'ar' ? 'خ' : 'S';
       {items.map((s, i) => (
         <details class="sv-row rv" name="service" open={i === 0}>
           <summary><span class="no">{String(i + 1).padStart(2, '0')}</span><span class="ttl">{tx(s.title, lang)}</span><span class="plus" aria-hidden="true"></span></summary>
-          <div class="sv-body"><p>{tx(s.description, lang)}</p><ul>{s.scope.map((x) => <li>{tx(x, lang)}</li>)}</ul></div>
+          <div class="sv-body"><p>{tx(s.description, lang)}</p><ul>{list(s.scope).map((x: any) => <li>{tx(x, lang)}</li>)}</ul></div>
         </details>
       ))}
     </div>

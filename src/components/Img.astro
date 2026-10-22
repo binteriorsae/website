@@ -1,7 +1,7 @@
 ---
 import { imgSrc } from '../lib/img';
-interface Props { src: string; alt?: string; width?: number; lazy?: boolean; class?: string; }
-const { src, alt = '', width = 1200, lazy = true, class: cls } = Astro.props;
+interface Props { src?: string; alt?: string; width?: number; lazy?: boolean; class?: string; }
+const { src = '', alt = '', width = 1200, lazy = true, class: cls } = Astro.props;
 const small = Math.max(600, Math.round(width / 2));
 const srcset = (src.includes('images.unsplash.com') || src.startsWith('/uploads/'))
   ? `${imgSrc(src, small)} ${small}w, ${imgSrc(src, width)} ${width}w`

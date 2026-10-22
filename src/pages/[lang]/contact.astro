@@ -7,7 +7,7 @@ import ui from '../../../content/ui.json';
 
 export function getStaticPaths() { return LANGS.map((lang) => ({ params: { lang } })); }
 const lang = Astro.params.lang as Lang;
-const { header, info, thanks } = contact;
+const header: any = contact.header ?? {}, info: any = contact.info ?? {}, thanks: any = contact.thanks ?? {};
 const U = ui.contact;
 ---
 <Base lang={lang} title={`${plain(tx(header.eyebrow, lang))} — B Interiors`} description={tx(header.lead, lang)} path="contact/" section="contact" bodyClass="svc-page" scripts={['contact.js']}>

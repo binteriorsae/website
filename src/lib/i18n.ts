@@ -20,3 +20,6 @@ export const rich = (s: string): string =>
 
 /** Plain text version of a rich string (no asterisks). */
 export const plain = (s: string): string => (s || '').replace(/\*/g, '');
+
+/** Lists saved by the CMS can disappear when emptied; treat a missing list as empty. */
+export const list = <T,>(v: T[] | undefined | null): T[] => (Array.isArray(v) ? v : []);
