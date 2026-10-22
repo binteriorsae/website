@@ -18,36 +18,10 @@
       "ar": "غرفة معيشة مفتوحة عصرية"
     }
   },
-  "marquee": [
-    {
-      "en": "Residential Design",
-      "ar": "التصميم السكني"
-    },
-    {
-      "en": "Space Planning",
-      "ar": "تخطيط المساحات"
-    },
-    {
-      "en": "Bespoke Furniture",
-      "ar": "أثاث مصمَّم خصيصًا"
-    },
-    {
-      "en": "Colour & Materials",
-      "ar": "الألوان والخامات"
-    },
-    {
-      "en": "Styling",
-      "ar": "التنسيق"
-    },
-    {
-      "en": "Project Management",
-      "ar": "إدارة المشاريع"
-    }
-  ],
   "studio": {
     "photo": "/uploads/villa-94.jpg",
     "photoAlt": {
-      "en": "Wellness room",
+      "en": "",
       "ar": "غرفة معيشة بطابع بوهيمي"
     },
     "caption": {
