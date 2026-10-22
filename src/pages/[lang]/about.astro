@@ -11,15 +11,12 @@ const lang = Astro.params.lang as Lang;
 const header: any = about.header ?? {}, story: any = about.story ?? {}, principles: any = about.principles ?? {}, process: any = about.process ?? {};
 const ghost = lang === 'ar' ? 'ب' : 'B';
 ---
-<Base lang={lang} title={`${plain(tx(header.title, lang))} — B Interiors`} description={tx(header.lead, lang)} path="about/" section="about">
-  <section class="phero">
-    <Img class="bg" src={header.photo} width={1800} lazy={false} /><div class="shade"></div><div class="ghost">{ghost}</div>
-    <div class="wrap">
-      <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
-      <h1 class="rv" set:html={rich(tx(header.title, lang))} />
-      <p class="rv">{tx(header.lead, lang)}</p>
-    </div>
-  </section>
+<Base lang={lang} title={`${plain(tx(header.title, lang))} — B Interiors`} description={tx(header.lead, lang)} path="about/" section="about" bodyClass="svc-page">
+  <section class="phero sv-hero"><div class="ghost">{ghost}</div><div class="wrap">
+    <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
+    <h1 class="rv" set:html={rich(tx(header.title, lang))} />
+    <p class="rv">{tx(header.lead, lang)}</p>
+  </div></section>
 
   <section><div class="wrap split">
     <div class="rv"><div class="frame"><Img src={story.photo} alt={tx(story.photoAlt, lang)} width={1000} /><div class="cap">{tx(story.caption, lang)}</div></div></div>

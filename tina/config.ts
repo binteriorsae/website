@@ -107,7 +107,7 @@ export default defineConfig({
       ]),
 
       page('about', 'About page', [
-        header([image('photo', 'Header photo')]),
+        header(),
         {
           type: 'object', name: 'story', label: 'My story',
           fields: [
@@ -150,7 +150,7 @@ export default defineConfig({
         },
       ]),
 
-      page('portfolio', 'Portfolio page', [header([image('photo', 'Header photo')])]),
+      page('portfolio', 'Portfolio page', [header()]),
 
       page('contact', 'Contact page', [
         header(),

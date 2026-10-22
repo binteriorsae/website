@@ -14,15 +14,12 @@ const cols = ['c-a', 'c-b', 'c-c', 'c-d', 'c-e', 'c-f'];
 const cats = ['all', 'residential', 'commercial', 'styling'];
 const ghost = lang === 'ar' ? 'ع' : 'P';
 ---
-<Base lang={lang} title={`${plain(tx(header.eyebrow, lang))} — B Interiors`} description={tx(header.lead, lang)} path="portfolio/" section="portfolio">
-  <section class="phero">
-    <Img class="bg" src={header.photo} width={1800} lazy={false} /><div class="shade"></div><div class="ghost">{ghost}</div>
-    <div class="wrap">
-      <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
-      <h1 class="rv" set:html={rich(tx(header.title, lang))} />
-      <p class="rv">{tx(header.lead, lang)}</p>
-    </div>
-  </section>
+<Base lang={lang} title={`${plain(tx(header.eyebrow, lang))} — B Interiors`} description={tx(header.lead, lang)} path="portfolio/" section="portfolio" bodyClass="svc-page">
+  <section class="phero sv-hero"><div class="ghost">{ghost}</div><div class="wrap">
+    <div class="eyebrow rv">{tx(header.eyebrow, lang)}</div>
+    <h1 class="rv" set:html={rich(tx(header.title, lang))} />
+    <p class="rv">{tx(header.lead, lang)}</p>
+  </div></section>
 
   <section><div class="wrap">
     <div class="filters rv">
