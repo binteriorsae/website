@@ -24,10 +24,6 @@
   },
   "scope": [
     {
-      "en": "Styling & furnishing",
-      "ar": "التنسيق والتأثيث"
-    },
-    {
       "en": "Spatial Reconfiguration",
       "ar": "طبقات الإضاءة"
     },
@@ -38,6 +34,10 @@
     {
       "en": "Interior Refresh & Repainting",
       "ar": "انتقاء الأعمال الفنية"
+    },
+    {
+      "en": "Styling & furnishing",
+      "ar": "التنسيق والتأثيث"
     }
   ],
   "heroImage": "https://images.unsplash.com/photo-1600121848594-d8644e57abab",
