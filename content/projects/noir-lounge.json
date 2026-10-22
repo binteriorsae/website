@@ -77,7 +77,9 @@
     {
       "caption": {
         "en": "Maid room turned to a multifunctional room"
-      }
+      },
+      "before": "/uploads/Empty-Minimal-Utility-Room-Before-Renovation.png",
+      "after": "/uploads/villa-97.jpg"
     }
   ]
 }
