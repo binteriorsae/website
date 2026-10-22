@@ -493,3 +493,9 @@ body.lb-lock{overflow:hidden}
 
 /* marquee separators (the little stars): light instead of dark */
 .marquee .track span::after{color:#fbf5d3}
+
+/* Gold header bar on every page */
+header.site,header.site.solid,body.home header.site{background:var(--gold);backdrop-filter:none;box-shadow:none}
+header.site .name,header.site nav.main a,body:not(.home) header.site:not(.solid) .name,body:not(.home) header.site:not(.solid) nav.main a{color:var(--ink)}
+header.site nav.main a::after,body:not(.home) header.site:not(.solid) nav.main a::after{background:var(--ink)}
+header.site .burger span,body:not(.home) header.site:not(.solid) .burger span{background:var(--ink)}
