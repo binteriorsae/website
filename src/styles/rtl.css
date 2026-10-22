@@ -8,7 +8,8 @@ html[lang="ar"]{--serif:'Tajawal','Segoe UI',Tahoma,sans-serif;--sans:'Tajawal',
 html[lang="ar"] body{font-weight:400;line-height:1.95;font-size:16px}
 /* letter-spacing breaks the joined Arabic letters, so switch it off */
 html[lang="ar"] *{letter-spacing:0!important}
-html[lang="ar"] .brand .name{letter-spacing:.42em!important}   /* the Latin brand name keeps its spacing */
+html[lang="ar"] .brand .t1{letter-spacing:.14em!important}   /* the Latin brand name keeps its spacing */
+html[lang="ar"] .brand .t2{font-size:12px;font-weight:500}
 html[lang="ar"] em,html[lang="ar"] i{font-style:normal}
 html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{font-weight:400;line-height:1.28}
 html[lang="ar"] h1{font-size:clamp(40px,6.2vw,92px)}
