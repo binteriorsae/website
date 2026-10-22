@@ -15,7 +15,7 @@
     "photo": "/uploads/villa-89.jpg"
   },
   "story": {
-    "photo": "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e",
+    "photo": "/uploads/villa-89.jpg",
     "photoAlt": {
       "en": "Interior detail",
       "ar": "تفصيل داخلي"
@@ -34,7 +34,7 @@
     },
     "paragraphs": [
       {
-        "en": "I believe the best interiors aren’t loud — they’re felt. They hold you the moment you walk in. That belief shapes every project I take on at B Interiors.",
+        "en": "I’m Bayan Jijakli, an interior designer with a background in civil engineering and a master’s degree in Interior Architecture and Design. During my postgraduate studies, I developed a focus on therapeutic and human-centered design, exploring how interior environments can support wellbeing, comfort, and positive everyday experiences.",
         "ar": "أؤمن بأن أجمل المساحات ليست الصاخبة، بل التي تُحَسّ. تحتضنك منذ لحظة دخولك. هذا الإيمان يوجّه كل مشروع أتولّاه في B Interiors."
       },
       {
