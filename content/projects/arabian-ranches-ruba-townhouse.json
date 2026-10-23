@@ -36,6 +36,12 @@
   "pairs": [
     {
       "caption": {
+        "en": "Living room"
+      },
+      "after": "/uploads/thevilla-39.jpg"
+    },
+    {
+      "caption": {
         "en": "Living Room "
       },
       "before": "/uploads/IMG_6925.jpg",
@@ -46,7 +52,7 @@
         "en": "Hallway"
       },
       "before": "/uploads/Modern-Hallway-with-Garden-Views.png",
-      "after": "/uploads/Warm-Minimalist-Open-Plan-Living-Space.png"
+      "after": "/uploads/thevilla-33.jpg"
     },
     {
       "caption": {
@@ -134,12 +140,6 @@
         "en": "Baby room"
       },
       "after": "/uploads/thevilla-68.jpg"
-    },
-    {
-      "caption": {
-        "en": "Living room"
-      },
-      "after": "/uploads/thevilla-39.jpg"
     }
   ]
 }
