@@ -102,7 +102,8 @@
     {
       "caption": {
         "en": "Kitchen"
-      }
+      },
+      "after": "/uploads/thevilla-65.jpg"
     }
   ]
 }
