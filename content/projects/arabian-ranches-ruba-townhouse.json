@@ -98,6 +98,11 @@
         "en": "Kitchen"
       },
       "after": "/uploads/thevilla-64.jpg"
+    },
+    {
+      "caption": {
+        "en": "Kitchen"
+      }
     }
   ]
 }
