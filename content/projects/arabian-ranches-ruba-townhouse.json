@@ -150,7 +150,8 @@
     {
       "caption": {
         "en": "Living room"
-      }
+      },
+      "after": "/uploads/thevilla-49.jpg"
     }
   ]
 }
