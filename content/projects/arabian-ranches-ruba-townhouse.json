@@ -2,5 +2,9 @@
   "order": 3,
   "name": {
     "en": "Arabian Ranches - Ruba Townhouse "
+  },
+  "category": "residential",
+  "property": {
+    "en": "Townhouse"
   }
 }
