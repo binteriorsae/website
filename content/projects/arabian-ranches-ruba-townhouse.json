@@ -50,8 +50,9 @@
     },
     {
       "caption": {
-        "en": "Coffee Bar"
-      }
+        "en": "Coffee Bar/Dining Room"
+      },
+      "before": "/uploads/Modern-Minimal-Hallway-with-Open-Doorways.png"
     },
     {},
     {}
