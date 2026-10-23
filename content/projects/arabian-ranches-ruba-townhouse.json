@@ -74,6 +74,12 @@
         "en": "Entrance/Dining Area"
       },
       "after": "/uploads/thevilla-9.jpg"
+    },
+    {
+      "caption": {
+        "en": "Entrance "
+      },
+      "after": "/uploads/thevilla-14.jpg"
     }
   ]
 }
