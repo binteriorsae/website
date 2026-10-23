@@ -138,7 +138,8 @@
     {
       "caption": {
         "en": "Living room"
-      }
+      },
+      "after": "/uploads/thevilla-39.jpg"
     }
   ]
 }
