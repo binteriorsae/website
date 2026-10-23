@@ -55,7 +55,11 @@
       "before": "/uploads/Modern-Minimal-Hallway-with-Open-Doorways.png",
       "after": "/uploads/Warm-Minimalist-Arched-Cabinet-Dining-Room.png"
     },
-    {},
+    {
+      "caption": {
+        "en": "Kitchen Partition "
+      }
+    },
     {}
   ]
 }
