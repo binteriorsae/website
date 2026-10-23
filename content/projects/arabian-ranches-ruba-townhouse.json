@@ -41,7 +41,11 @@
       "before": "/uploads/IMG_6925.jpg",
       "after": "/uploads/thevilla-50.jpg"
     },
-    {},
+    {
+      "caption": {
+        "en": "Dinning Area"
+      }
+    },
     {},
     {},
     {}
