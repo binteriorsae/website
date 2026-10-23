@@ -68,6 +68,12 @@
       },
       "before": "/uploads/Wide-Angle-Minimalist-Nursery-Bedroom.png",
       "after": "/uploads/Warm-Pink-Nursery-with-Glowing-Pendant.png"
+    },
+    {
+      "caption": {
+        "en": "Entrance/Dining Area"
+      },
+      "after": "/uploads/thevilla-9.jpg"
     }
   ]
 }
