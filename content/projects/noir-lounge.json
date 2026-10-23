@@ -83,15 +83,15 @@
     },
     {
       "caption": {
-        "en": "Dinning "
+        "en": "Living room"
       },
-      "after": "/uploads/Bright-Airy-Dining-Nook-with-Garden-Views.png"
+      "after": "/uploads/Bright-Minimalist-Living-Room-Retreat.png"
     },
     {
       "caption": {
-        "en": "kitchen with stairs"
+        "en": "Dinning "
       },
-      "after": "/uploads/villa-27.jpg"
+      "after": "/uploads/Bright-Airy-Dining-Nook-with-Garden-Views.png"
     },
     {
       "caption": {
@@ -107,6 +107,30 @@
     },
     {
       "caption": {
+        "en": "Kitchen"
+      },
+      "after": "/uploads/villa-33.jpg"
+    },
+    {
+      "caption": {
+        "en": "kitchen with stairs"
+      },
+      "after": "/uploads/villa-27.jpg"
+    },
+    {
+      "caption": {
+        "en": "Stairs"
+      },
+      "after": "/uploads/villa-51.jpg"
+    },
+    {
+      "caption": {
+        "en": "Office "
+      },
+      "after": "/uploads/villa-97.jpg"
+    },
+    {
+      "caption": {
         "en": "Office"
       },
       "after": "/uploads/villa-101.jpg"
@@ -116,12 +140,6 @@
         "en": "Office "
       },
       "after": "/uploads/villa-100.jpg"
-    },
-    {
-      "caption": {
-        "en": "Stairs"
-      },
-      "after": "/uploads/villa-51.jpg"
     },
     {
       "after": "/uploads/villa-122.jpg"
@@ -182,24 +200,6 @@
         "en": "Guest Toilet"
       },
       "after": "/uploads/villa-103.jpg"
-    },
-    {
-      "caption": {
-        "en": "Living room"
-      },
-      "after": "/uploads/Bright-Minimalist-Living-Room-Retreat.png"
-    },
-    {
-      "caption": {
-        "en": "Kitchen"
-      },
-      "after": "/uploads/villa-33.jpg"
-    },
-    {
-      "caption": {
-        "en": "Office "
-      },
-      "after": "/uploads/villa-97.jpg"
     }
   ]
 }
