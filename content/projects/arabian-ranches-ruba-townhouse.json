@@ -92,6 +92,12 @@
     },
     {
       "after": "/uploads/thevilla-60.jpg"
+    },
+    {
+      "caption": {
+        "en": "Kitchen"
+      },
+      "after": "/uploads/thevilla-64.jpg"
     }
   ]
 }
