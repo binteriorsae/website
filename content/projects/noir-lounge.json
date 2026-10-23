@@ -112,10 +112,16 @@
       "after": "/uploads/villa-33.jpg"
     },
     {
+      "after": "/uploads/villa-31.jpg"
+    },
+    {
       "caption": {
         "en": "kitchen with stairs"
       },
       "after": "/uploads/villa-27.jpg"
+    },
+    {
+      "after": "/uploads/villa-19.jpg"
     },
     {
       "caption": {
@@ -200,12 +206,6 @@
         "en": "Guest Toilet"
       },
       "after": "/uploads/villa-103.jpg"
-    },
-    {
-      "after": "/uploads/villa-31.jpg"
-    },
-    {
-      "after": "/uploads/villa-19.jpg"
     }
   ]
 }
