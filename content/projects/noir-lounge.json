@@ -82,10 +82,13 @@
       "after": "/uploads/Cozy-Warmly-Lit-Reading-Nook.png"
     },
     {
-      "after": "/uploads/villa-17.jpg"
+      "after": "/uploads/Bright-Airy-Dining-Nook-with-Garden-Views.png"
     },
     {
       "after": "/uploads/villa-27.jpg"
+    },
+    {
+      "after": "/uploads/villa-17.jpg"
     },
     {
       "after": "/uploads/villa-29.jpg"
@@ -142,10 +145,10 @@
       "after": "/uploads/villa-33.jpg"
     },
     {
+      "caption": {
+        "en": "Office "
+      },
       "after": "/uploads/villa-97.jpg"
-    },
-    {
-      "after": "/uploads/Bright-Airy-Dining-Nook-with-Garden-Views.png"
     }
   ]
 }
