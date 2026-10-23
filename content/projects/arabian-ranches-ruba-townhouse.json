@@ -62,6 +62,10 @@
       "before": "/uploads/Sunlit-Kitchen-Renovation-Interior.png",
       "after": "/uploads/Warm-Minimalist-Living-Room-and-Kitchen.png"
     },
-    {}
+    {
+      "caption": {
+        "en": "Baby room refresh"
+      }
+    }
   ]
 }
