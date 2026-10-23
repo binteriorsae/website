@@ -58,7 +58,9 @@
     {
       "caption": {
         "en": "Kitchen Partition "
-      }
+      },
+      "before": "/uploads/Sunlit-Kitchen-Renovation-Interior.png",
+      "after": "/uploads/Warm-Minimalist-Living-Room-and-Kitchen.png"
     },
     {}
   ]
