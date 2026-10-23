@@ -36,22 +36,10 @@
   "pairs": [
     {
       "caption": {
-        "en": "Living room"
-      },
-      "after": "/uploads/thevilla-39.jpg"
-    },
-    {
-      "caption": {
         "en": "Living Room "
       },
       "before": "/uploads/IMG_6925.jpg",
       "after": "/uploads/thevilla-50.jpg"
-    },
-    {
-      "caption": {
-        "en": "Living room"
-      },
-      "after": "/uploads/thevilla-56.jpg"
     },
     {
       "caption": {
@@ -83,15 +71,27 @@
     },
     {
       "caption": {
-        "en": "Entrance/Dining Area"
+        "en": "Living room"
       },
-      "after": "/uploads/thevilla-9.jpg"
+      "after": "/uploads/thevilla-39.jpg"
     },
     {
       "caption": {
         "en": "Living room"
       },
       "after": "/uploads/thevilla-49.jpg"
+    },
+    {
+      "caption": {
+        "en": "Living room"
+      },
+      "after": "/uploads/thevilla-56.jpg"
+    },
+    {
+      "caption": {
+        "en": "Entrance/Dining Area"
+      },
+      "after": "/uploads/thevilla-9.jpg"
     },
     {
       "caption": {
