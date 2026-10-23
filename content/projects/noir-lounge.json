@@ -200,6 +200,9 @@
         "en": "Guest Toilet"
       },
       "after": "/uploads/villa-103.jpg"
+    },
+    {
+      "after": "/uploads/villa-31.jpg"
     }
   ]
 }
