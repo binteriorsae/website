@@ -104,6 +104,12 @@
         "en": "Kitchen"
       },
       "after": "/uploads/thevilla-65.jpg"
+    },
+    {
+      "caption": {
+        "en": "Living room"
+      },
+      "after": "/uploads/thevilla-56.jpg"
     }
   ]
 }
