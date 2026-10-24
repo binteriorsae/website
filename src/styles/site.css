@@ -386,7 +386,7 @@ body.svc-page header.site:not(.solid) .burger span{background:var(--ink)}
 .ba{position:relative;aspect-ratio:4/3;overflow:hidden;background:#222;user-select:none}
 .ba-fig.wide .ba{aspect-ratio:16/8.5}
 .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
-.ba .before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0);filter:grayscale(.9) contrast(.72) brightness(.72) blur(1.4px)}
+.ba .before{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0);filter:grayscale(.9) contrast(.72) brightness(.72)}
 .ba .handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:2px;background:#fff;transform:translateX(-50%);pointer-events:none}
 .ba .handle::after{content:"↔";position:absolute;top:50%;left:50%;width:54px;height:54px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-size:22px;transform:translate(-50%,-50%);box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .ba .lab{position:absolute;bottom:16px;padding:6px 14px;background:rgba(18,18,16,.72);color:#fff;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;pointer-events:none}
@@ -492,15 +492,8 @@ header.site .name,header.site nav.main a,body:not(.home) header.site:not(.solid)
 header.site nav.main a::after,body:not(.home) header.site:not(.solid) nav.main a::after{background:var(--ink)}
 header.site .burger span,body:not(.home) header.site:not(.solid) .burger span{background:var(--ink)}
 
-/* Header brand: charcoal mark, divider, name + tagline */
+/* Header brand: white mark + name */
 .brand-mark{display:block;height:46px;width:auto;transition:height .4s}
 header.site.solid .brand-mark{height:40px}
-.brand .lock{display:block;margin-left:18px;padding-left:18px;border-left:1px solid rgba(42,42,40,.45)}
-.brand .t1{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;letter-spacing:.14em;line-height:1;font-weight:500;text-transform:uppercase}
-.brand .t2{display:block;font-size:8.5px;letter-spacing:.42em;text-transform:uppercase;margin-top:6px;font-weight:500}
-@media(max-width:980px){
-  .brand .t1{font-size:19px}
-  .brand .lock{margin-left:12px;padding-left:12px}
-  .brand-mark{height:38px}
-  header.site.solid .brand-mark{height:36px}
-}
+.brand .name{font-size:12px;letter-spacing:.42em;font-weight:500;color:#fff!important}
+@media(max-width:980px){.brand-mark{height:38px}header.site.solid .brand-mark{height:36px}}
