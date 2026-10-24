@@ -47,7 +47,11 @@
       "before": "",
       "after": "/uploads/Luxurious-Gold-Accented-Marble-Lobby.png"
     },
-    {},
+    {
+      "caption": {
+        "en": "The Majlis"
+      }
+    },
     {},
     {},
     {}
