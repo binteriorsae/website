@@ -85,6 +85,12 @@
     },
     {
       "caption": {
+        "en": "Master Bedroom Toilet "
+      },
+      "after": "/uploads/DCB74FB7-57ED-41B1-95DD-259CD3F53269.JPG.jpeg"
+    },
+    {
+      "caption": {
         "en": "Family Living Room Vanity"
       },
       "after": "/uploads/A433C6FD-80BF-4279-8894-9C1236F0DD17.JPG.jpeg"
@@ -124,12 +130,6 @@
         "en": "The Daughter Bathroom"
       },
       "after": "/uploads/8A877FA5-9FAE-40A6-A1BF-D318DE9C6859.JPG.jpeg"
-    },
-    {
-      "caption": {
-        "en": "Master Bedroom Toilet "
-      },
-      "after": "/uploads/DCB74FB7-57ED-41B1-95DD-259CD3F53269.JPG.jpeg"
     }
   ]
 }
