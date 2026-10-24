@@ -492,16 +492,8 @@ header.site .name,header.site nav.main a,body:not(.home) header.site:not(.solid)
 header.site nav.main a::after,body:not(.home) header.site:not(.solid) nav.main a::after{background:var(--ink)}
 header.site .burger span,body:not(.home) header.site:not(.solid) .burger span{background:var(--ink)}
 
-/* Header brand: charcoal mark, divider, name + tagline */
+/* Header brand: white mark + name */
 .brand-mark{display:block;height:46px;width:auto;transition:height .4s}
 header.site.solid .brand-mark{height:40px}
-.brand .lock{display:block;margin-left:18px;padding-left:18px;border-left:1px solid rgba(255,255,255,.7)}
-.brand .t1,.brand .t2{color:#fff}
-.brand .t1{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;letter-spacing:.14em;line-height:1;font-weight:500;text-transform:uppercase}
-.brand .t2{display:block;font-size:8.5px;letter-spacing:.42em;text-transform:uppercase;margin-top:6px;font-weight:500}
-@media(max-width:980px){
-  .brand .t1{font-size:19px}
-  .brand .lock{margin-left:12px;padding-left:12px}
-  .brand-mark{height:38px}
-  header.site.solid .brand-mark{height:36px}
-}
+.brand .name{font-size:16px;letter-spacing:.42em;font-weight:500;color:#fff!important}
+@media(max-width:980px){.brand-mark{height:38px}header.site.solid .brand-mark{height:36px}}
