@@ -65,6 +65,10 @@
       },
       "after": "/uploads/IMG_0507.PNG"
     },
-    {}
+    {
+      "caption": {
+        "en": "Master Bedroom"
+      }
+    }
   ]
 }
