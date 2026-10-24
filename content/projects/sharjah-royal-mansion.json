@@ -2,5 +2,9 @@
   "order": 4,
   "name": {
     "en": "Sharjah Royal Mansion"
+  },
+  "category": "residential",
+  "property": {
+    "en": "Mansion"
   }
 }
