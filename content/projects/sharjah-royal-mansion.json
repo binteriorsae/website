@@ -59,7 +59,11 @@
       },
       "after": "/uploads/IMG_0515.JPEG"
     },
-    {},
+    {
+      "caption": {
+        "en": "Majlis Vanity Room"
+      }
+    },
     {}
   ]
 }
