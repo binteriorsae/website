@@ -53,7 +53,12 @@
       },
       "after": "/uploads/Grand-Ivory-and-Gold-Salon(1).png"
     },
-    {},
+    {
+      "caption": {
+        "en": "Majlis Dining Hall"
+      },
+      "after": "/uploads/IMG_0515.JPEG"
+    },
     {},
     {}
   ]
