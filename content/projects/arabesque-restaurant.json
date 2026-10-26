@@ -2,5 +2,9 @@
   "order": 6,
   "name": {
     "en": "Arabesque Restaurant "
+  },
+  "category": "commercial",
+  "property": {
+    "en": "Restaurant"
   }
 }
