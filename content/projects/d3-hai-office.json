@@ -42,6 +42,12 @@
     },
     {
       "caption": {
+        "en": "Outdoor Office "
+      },
+      "after": "/uploads/Golden-Hour-Courtyard-Work-Lounge.png"
+    },
+    {
+      "caption": {
         "en": "Office "
       },
       "after": "/uploads/Sunlit-Biophilic-Office-Lounge.png"
@@ -60,9 +66,8 @@
     },
     {
       "caption": {
-        "en": "Outdoor Office "
-      },
-      "after": "/uploads/Golden-Hour-Courtyard-Work-Lounge.png"
+        "en": "Office pantry"
+      }
     }
   ]
 }
