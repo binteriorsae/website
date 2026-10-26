@@ -58,7 +58,8 @@
     {
       "caption": {
         "en": "Material Selection"
-      }
+      },
+      "after": "/uploads/Emerald-Tiles-and-Textured-Material-Palette.png"
     }
   ]
 }
