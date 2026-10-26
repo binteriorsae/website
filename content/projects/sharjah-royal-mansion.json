@@ -61,6 +61,12 @@
     },
     {
       "caption": {
+        "en": "Majlis"
+      },
+      "after": "/uploads/Symmetrical-Matte-Gold-Luxury-Living-Room.png"
+    },
+    {
+      "caption": {
         "en": "Majlis Dining Hall"
       },
       "after": "/uploads/Frameless-Gold-Ceiling-Dining-Room.png"
@@ -136,12 +142,6 @@
         "en": "The Daughter Bathroom"
       },
       "after": "/uploads/8A877FA5-9FAE-40A6-A1BF-D318DE9C6859.JPG.jpeg"
-    },
-    {
-      "caption": {
-        "en": "Majlis"
-      },
-      "after": "/uploads/Symmetrical-Matte-Gold-Luxury-Living-Room.png"
     }
   ]
 }
