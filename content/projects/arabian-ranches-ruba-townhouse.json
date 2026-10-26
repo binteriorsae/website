@@ -71,6 +71,12 @@
     },
     {
       "caption": {
+        "en": "Living Room"
+      },
+      "after": "/uploads/thevilla-32.jpg"
+    },
+    {
+      "caption": {
         "en": "Living room"
       },
       "after": "/uploads/thevilla-39.jpg"
@@ -98,6 +104,12 @@
         "en": "Entrance "
       },
       "after": "/uploads/thevilla-14.jpg"
+    },
+    {
+      "caption": {
+        "en": "Coffee Bar"
+      },
+      "after": "/uploads/thevilla-22.jpg"
     },
     {
       "caption": {
@@ -152,18 +164,6 @@
         "en": "Baby room"
       },
       "after": "/uploads/thevilla-68.jpg"
-    },
-    {
-      "caption": {
-        "en": "Coffee Bar"
-      },
-      "after": "/uploads/thevilla-22.jpg"
-    },
-    {
-      "caption": {
-        "en": "Living Room"
-      },
-      "after": "/uploads/thevilla-32.jpg"
     }
   ]
 }
