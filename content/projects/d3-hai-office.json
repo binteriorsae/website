@@ -2,5 +2,9 @@
   "order": 5,
   "name": {
     "en": "D3 HAI Office "
+  },
+  "category": "commercial",
+  "property": {
+    "en": "Office"
   }
 }
