@@ -32,5 +32,16 @@
     }
   ],
   "heroImage": "/uploads/Golden-Hour-Biophilic-Coworking-Lounge.png",
-  "cardImage": "/uploads/Sunlit-Scandinavian-Biophilic-Creative-Lounge.png"
+  "cardImage": "/uploads/Sunlit-Scandinavian-Biophilic-Creative-Lounge.png",
+  "pairs": [
+    {
+      "caption": {
+        "en": "Office"
+      },
+      "after": "/uploads/Sunlit-Scandinavian-Biophilic-Creative-Lounge.png"
+    },
+    {},
+    {},
+    {}
+  ]
 }
