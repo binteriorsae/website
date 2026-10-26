@@ -57,6 +57,11 @@
         "en": "Eating/Resting Lounge "
       },
       "after": "/uploads/Sunset-Putting-Green-Lounge.png"
+    },
+    {
+      "caption": {
+        "en": "Outdoor Office "
+      }
     }
   ]
 }
