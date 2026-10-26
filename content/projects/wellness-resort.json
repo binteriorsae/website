@@ -2,7 +2,7 @@
   "order": 1,
   "name": {
     "en": "Wellness Resort & Spa - H2o Resort",
-    "ar": "إقامة القوس"
+    "ar": "منتجع عافية وسبا – منتجع H2o"
   },
   "category": "commercial",
   "property": {
@@ -25,23 +25,23 @@
   "scope": [
     {
       "en": "Research & Concept Development",
-      "ar": "تخطيط المساحات"
+      "ar": "البحث وتطوير المفهوم"
     },
     {
       "en": "Trauma-Informed Design",
-      "ar": "المفهوم والخامات"
+      "ar": "تصميم مراعٍ للصدمات النفسية"
     },
     {
       "en": "Space Planning & Zoning",
-      "ar": "نجارة خاصة"
+      "ar": "تخطيط المساحات وتقسيمها"
     },
     {
       "en": "Sensory & Environmental Design",
-      "ar": "تصميم الإضاءة"
+      "ar": "تصميم حسي وبيئي"
     },
     {
       "en": "Materials, Lighting & Finishes",
-      "ar": "الأثاث والتنسيق"
+      "ar": "الخامات والإضاءة والتشطيبات"
     }
   ],
   "heroImage": "/uploads/Luxury-Coastal-Glass-Lounge.png",
@@ -81,7 +81,8 @@
     },
     {
       "caption": {
-        "en": "Massage Room"
+        "en": "Massage Room",
+        "ar": "غرفة المساج"
       },
       "after": "/uploads/Overwater-Villa-Spa-Retreat.png"
     },

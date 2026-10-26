@@ -1,40 +1,51 @@
 {
   "order": 4,
   "name": {
-    "en": "Sharjah Royal Mansion"
+    "en": "Sharjah Royal Mansion",
+    "ar": "قصر الشارقة الملكي"
   },
   "category": "residential",
   "property": {
-    "en": "Mansion"
+    "en": "Mansion",
+    "ar": "قصر"
   },
   "year": "2025-Ongoing ",
   "location": {
-    "en": "Sharjah, United Arab Emirates"
+    "en": "Sharjah, United Arab Emirates",
+    "ar": "الشارقة، الإمارات العربية المتحدة"
   },
   "line": {
-    "en": "Located in Sharjah, UAE, this luxury private mansion is conceived as a contemporary residence that blends time less elegance with modern living."
+    "en": "Located in Sharjah, UAE, this luxury private mansion is conceived as a contemporary residence that blends time less elegance with modern living.",
+    "ar": "يقع هذا القصر الخاص الفاخر في الشارقة بالإمارات، وقد صُمّم كمسكن معاصر يجمع بين الأناقة الخالدة والحياة العصرية."
   },
   "brief": {
-    "en": "Every space, from the formal majlis and family living areas to the private bedroom suites and wellness facilities, has been thoughtfully planned to balance functionality, comfort, and luxury. The result is a residence that celebrates architectural excellence, spatial openness, and meticulous detailing, offering an exclusive living experience tailored to contemporary family life in the UAE."
+    "en": "Every space, from the formal majlis and family living areas to the private bedroom suites and wellness facilities, has been thoughtfully planned to balance functionality, comfort, and luxury. The result is a residence that celebrates architectural excellence, spatial openness, and meticulous detailing, offering an exclusive living experience tailored to contemporary family life in the UAE.",
+    "ar": "كل مساحة، من المجلس الرسمي ومناطق معيشة العائلة إلى أجنحة النوم الخاصة ومرافق العافية، خُطّطت بعناية لتوازن بين الوظيفة والراحة والفخامة. والنتيجة مسكن يحتفي بالتميّز المعماري والانفتاح المكاني والتفاصيل الدقيقة، ويقدّم تجربة معيشة حصرية تناسب حياة الأسرة العصرية في الإمارات."
   },
   "scope": [
     {
-      "en": "Space Planning "
+      "en": "Space Planning ",
+      "ar": "تخطيط المساحات"
     },
     {
-      "en": "Concept & Materials"
+      "en": "Concept & Materials",
+      "ar": "المفهوم والخامات"
     },
     {
-      "en": "Custom Joinery"
+      "en": "Custom Joinery",
+      "ar": "نجارة خاصة"
     },
     {
-      "en": "Lightening Design"
+      "en": "Lightening Design",
+      "ar": "تصميم الإضاءة"
     },
     {
-      "en": "Furniture & Styling "
+      "en": "Furniture & Styling ",
+      "ar": "الأثاث والتنسيق"
     },
     {
-      "en": "Project Management "
+      "en": "Project Management ",
+      "ar": "إدارة المشروع"
     }
   ],
   "heroImage": "/uploads/475CD4CE-0BFD-4B30-8390-DF9E8F86D2BF.JPG.jpeg",
@@ -42,104 +53,121 @@
   "pairs": [
     {
       "caption": {
-        "en": "Family Entrance"
+        "en": "Family Entrance",
+        "ar": "مدخل العائلة"
       },
       "after": "/uploads/5FA97794-9E6D-4E9D-91BE-B3EE981F1B0A.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "Majlis Lobby"
+        "en": "Majlis Lobby",
+        "ar": "ردهة المجلس"
       },
       "before": "",
       "after": "/uploads/Luxurious-Gold-Accented-Marble-Lobby.png"
     },
     {
       "caption": {
-        "en": "Majlis"
+        "en": "Majlis",
+        "ar": "المجلس"
       },
       "after": "/uploads/Grand-Ivory-and-Gold-Salon(1).png"
     },
     {
       "caption": {
-        "en": "Majlis Dining Hall"
+        "en": "Majlis Dining Hall",
+        "ar": "قاعة طعام المجلس"
       },
       "after": "/uploads/Frameless-Gold-Ceiling-Dining-Room.png"
     },
     {
       "caption": {
-        "en": "Majlis Vanity Room"
+        "en": "Majlis Vanity Room",
+        "ar": "غرفة تزيين المجلس"
       },
       "after": "/uploads/IMG_0507.PNG"
     },
     {
       "caption": {
-        "en": "Majlis"
+        "en": "Majlis",
+        "ar": "المجلس"
       },
       "after": "/uploads/Symmetrical-Matte-Gold-Luxury-Living-Room.png"
     },
     {
       "caption": {
-        "en": "Family Living Room"
+        "en": "Family Living Room",
+        "ar": "صالة معيشة العائلة"
       },
       "after": "/uploads/Luxurious-Neutral-Living-Room-with-Fireplace.png"
     },
     {
       "caption": {
-        "en": "Master Bedroom"
+        "en": "Master Bedroom",
+        "ar": "غرفة النوم الرئيسية"
       },
       "after": "/uploads/7784A5AB-BC30-4B0A-A351-97349441D719.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "Master Bedroom Toilet"
+        "en": "Master Bedroom Toilet",
+        "ar": "حمّام غرفة النوم الرئيسية"
       },
       "after": "/uploads/8E74F111-40ED-4C77-A932-D2AA3CA678C0.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "Master Bedroom Toilet "
+        "en": "Master Bedroom Toilet ",
+        "ar": "حمّام غرفة النوم الرئيسية"
       },
       "after": "/uploads/DCB74FB7-57ED-41B1-95DD-259CD3F53269.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "Family Living Room Vanity"
+        "en": "Family Living Room Vanity",
+        "ar": "منطقة التزيين في صالة العائلة"
       },
       "after": "/uploads/A433C6FD-80BF-4279-8894-9C1236F0DD17.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "Guest Bedroom"
+        "en": "Guest Bedroom",
+        "ar": "غرفة الضيوف"
       },
       "after": "/uploads/F5A4AD15-DE6F-413D-BFDD-7119F5A7474A.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "Guest Bedroom"
+        "en": "Guest Bedroom",
+        "ar": "غرفة الضيوف"
       },
       "after": "/uploads/85CE3D5C-DA5A-442D-8EE7-5AE45F53092F.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "The Daughter Room"
+        "en": "The Daughter Room",
+        "ar": "غرفة الابنة"
       },
       "after": "/uploads/A891BF38-8C41-4ECD-8AAF-6E36E292E0D5.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "The Daughter Room"
+        "en": "The Daughter Room",
+        "ar": "غرفة الابنة"
       },
       "after": "/uploads/A7F8553B-C15F-4D5E-A8A2-16FA0F3C98CE.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "The Daughter Bathroom"
+        "en": "The Daughter Bathroom",
+        "ar": "حمّام الابنة"
       },
       "after": "/uploads/AE332844-8E41-4A4A-91F5-BDA3BE2B2005.JPG.jpeg"
     },
     {
       "caption": {
-        "en": "The Daughter Bathroom"
+        "en": "The Daughter Bathroom",
+        "ar": "حمّام الابنة"
       },
       "after": "/uploads/8A877FA5-9FAE-40A6-A1BF-D318DE9C6859.JPG.jpeg"
     }
