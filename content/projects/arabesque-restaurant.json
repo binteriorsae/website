@@ -30,5 +30,12 @@
     {
       "en": "Furniture & styling"
     }
+  ],
+  "heroImage": "/uploads/Moroccan-Luxe-Courtyard-Café.png",
+  "cardImage": "/uploads/Luxurious-Moroccan-Courtyard-Fountain-Lounge.png",
+  "pairs": [
+    {
+      "after": "/uploads/Luxurious-Moroccan-Courtyard-Fountain-Lounge.png"
+    }
   ]
 }
