@@ -158,6 +158,9 @@
         "en": "Coffee Bar"
       },
       "after": "/uploads/thevilla-22.jpg"
+    },
+    {
+      "after": "/uploads/thevilla-32.jpg"
     }
   ]
 }
