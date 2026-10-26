@@ -1,8 +1,11 @@
 ---
 // The root address just forwards visitors to a language. Arabic browsers go to /ar/.
-import { href } from '../lib/site';
+import { asset, href } from '../lib/site';
 const en = href('en');
 const ar = href('ar');
+const image = new URL(asset('share.jpg'), Astro.site).href;
+const title = 'B Interiors — Interior Design by Bayan Jijakli';
+const desc = 'Elegant, timeless residential and commercial interiors in the UAE.';
 ---
 <!doctype html>
 <html lang="en">
@@ -10,6 +13,14 @@ const ar = href('ar');
   <meta charset="utf-8" />
   <meta name="robots" content="noindex" />
   <title>B Interiors</title>
+  <meta name="description" content={desc} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="B Interiors" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={desc} />
+  <meta property="og:url" content={new URL(asset(''), Astro.site).href} />
+  <meta property="og:image" content={image} />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href={en} />
   <meta http-equiv="refresh" content={`0; url=${en}`} />
   <script is:inline define:vars={{ en, ar }}>
