@@ -6,7 +6,7 @@
     },
     "headline": {
       "en": "Spaces that nurture *the soul*\n& elevate everyday living.",
-      "ar": "مساحات\nب*أناقة هادئة*\nوروح."
+      "ar": "مساحات تغذّي *الروح*\nوترتقي بالحياة اليومية."
     },
     "lead": {
       "en": "",
@@ -15,7 +15,7 @@
     "photo": "/uploads/Oceanfront-Rain-Curtain-Spa-Pavilion.png",
     "photoAlt": {
       "en": "A multifunctional wellness room featuring sensory rain pods, designed to heal invisible injuries.",
-      "ar": "غرفة معيشة مفتوحة عصرية"
+      "ar": "غرفة عافية متعددة الوظائف تضم كبسولات مطر حسية، صُمّمت لتضميد الجراح غير المرئية."
     }
   },
   "studio": {
@@ -34,16 +34,16 @@
     },
     "title": {
       "en": "More than *beautiful*. Meaningful by design.",
-      "ar": "تصميم يبدو *سهلًا*، لأنه مدروس بعناية."
+      "ar": "أكثر من *جميل*. تصميم له معنى."
     },
     "paragraphs": [
       {
         "en": "B Interiors is a boutique interior design studio led by Bayan Jijakli, founded on the belief that our surroundings shape how we feel, connect, and experience everyday life. — Beyond aesthetics, we design with mental wellbeing in mind, creating spaces that nurture calm, inspire curiosity, encourage positive emotions, and enrich the way we live.",
-        "ar": "B Interiors استوديو بوتيكي بقيادة بيان جيجكلي. من أول رسمة حتى آخر رفٍّ منسّق، يُصمَّم كل مشروع وفق طريقة عيشك — بدمج خامات راقية وإضاءة ناعمة وخطوط خالدة لبيوتٍ تفيض راحة."
+        "ar": "B Interiors استوديو تصميم داخلي بوتيكي تقوده بيان جيجكلي، قام على إيمان بأن ما يحيط بنا يشكّل شعورنا وتواصلنا وتجربتنا للحياة اليومية. وإلى جانب الجماليات، نصمم مع وضع الصحة النفسية في الاعتبار، فنبتكر مساحات تبعث الهدوء، وتثير الفضول، وتعزز المشاعر الإيجابية، وتُثري طريقة عيشنا."
       },
       {
         "en": "Because great design is not only seen. It is felt, experienced, and lived.",
-        "ar": "لا قوالب جاهزة ولا موضة لأجل الموضة. فقط مساحات شخصية متقنة صُنعت لتدوم."
+        "ar": "لأن التصميم العظيم لا يُرى فحسب، بل يُحَس ويُختبر ويُعاش."
       }
     ]
   }

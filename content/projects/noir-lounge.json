@@ -2,25 +2,25 @@
   "order": 2,
   "name": {
     "en": "Arabian Ranches 3 - Sun Townhouse Renovation",
-    "ar": "صالة نوار"
+    "ar": "تجديد تاون هاوس صن – المرابع العربية 3"
   },
   "category": "residential",
   "property": {
     "en": "Townhouse",
-    "ar": "شقة"
+    "ar": "تاون هاوس"
   },
   "year": "2025",
   "location": {
     "en": "Dubai, United Arab Emirates",
-    "ar": "الإمارات العربية المتحدة"
+    "ar": "دبي، الإمارات العربية المتحدة"
   },
   "line": {
     "en": "A thoughtful townhouse renovation focused on space, functionality, and cost efficiency.",
-    "ar": "مساحة معيشة داكنة الطابع ومفصّلة بدرجات الفحم والنحاس والضوء الناعم."
+    "ar": "تجديد مدروس لتاون هاوس يركّز على المساحة والوظيفة وكفاءة التكلفة."
   },
   "brief": {
     "en": "This 2,400 sq. ft. four-bedroom townhouse was redesigned for a young family with toddlers, with a focus on creating a spacious, airy, and highly functional home within a limited budget. The layout was reconfigured by opening one room into the living area and relocating the kitchen to the former guest room, allowing for well-defined living and dining spaces. Wherever possible, the existing furniture was retained and thoughtfully integrated into the new design, while custom storage solutions were incorporated throughout the home to meet the family's everyday needs.",
-    "ar": "شقة صغيرة في المدينة أرادت أن تبدو رحبة وراقية. اعتمدنا ألوانًا داكنة هادئة وأضفنا لمسات معدنية دافئة، وصمّمنا الإضاءة لتتبدّل الغرفة من النهار إلى المساء."
+    "ar": "أُعيد تصميم هذا التاون هاوس المكوّن من أربع غرف نوم بمساحة 2,400 قدم مربع لعائلة شابة لديها أطفال صغار، مع التركيز على ابتكار منزل رحب ومشرق وعملي للغاية ضمن ميزانية محدودة. أُعيد تشكيل المخطط بفتح إحدى الغرف على منطقة المعيشة ونقل المطبخ إلى غرفة الضيوف السابقة، مما أتاح مساحات معيشة وطعام واضحة المعالم. وحيثما أمكن، جرى الاحتفاظ بالأثاث القائم ودمجه بعناية في التصميم الجديد، مع إضافة حلول تخزين مخصصة في أرجاء المنزل لتلبية احتياجات الأسرة اليومية."
   },
   "scope": [
     {
@@ -46,7 +46,7 @@
     {
       "caption": {
         "en": "Living Room",
-        "ar": "الصالة"
+        "ar": "غرفة المعيشة"
       },
       "before": "/uploads/Sunlit-Modern-Apartment-Interior.png",
       "after": "/uploads/villa-15.jpg"
@@ -54,7 +54,7 @@
     {
       "caption": {
         "en": "Guest Room — Converted into Kitchen",
-        "ar": "ركن القراءة"
+        "ar": "غرفة الضيوف – حُوّلت إلى مطبخ"
       },
       "before": "/uploads/Sunlit-Minimalist-Hallway-to-Garden.png",
       "after": "/uploads/Sunlit-Modern-Kitchen-and-Living-Space.png"
@@ -62,21 +62,23 @@
     {
       "caption": {
         "en": "Entrance ",
-        "ar": "جدار الأريكة"
+        "ar": "المدخل"
       },
       "before": "/uploads/Modern-Minimalist-Entryway.png",
       "after": "/uploads/Luxurious-Mirrored-Herringbone-Entryway.png"
     },
     {
       "caption": {
-        "en": "Stairs"
+        "en": "Stairs",
+        "ar": "الدرج"
       },
       "before": "/uploads/Minimalist-Staircase-with-Warm-Wall-Sconces.png",
       "after": "/uploads/Minimalist-Staircase-with-Warm-Lighting.png"
     },
     {
       "caption": {
-        "en": "Maid’s Room Repurposed as Guest Bedroom / Home Office"
+        "en": "Maid’s Room Repurposed as Guest Bedroom / Home Office",
+        "ar": "غرفة الخادمة بعد تحويلها إلى غرفة نوم للضيوف / مكتب منزلي"
       },
       "before": "/uploads/Sunlit-Minimalist-Room-Entrance.png",
       "after": "/uploads/Warm-Minimal-Window-Vanity-Nook.png"
@@ -89,13 +91,15 @@
     },
     {
       "caption": {
-        "en": "Dining Area"
+        "en": "Dining Area",
+        "ar": "منطقة الطعام"
       },
       "after": "/uploads/Bright-Airy-Dining-Nook-with-Garden-Views.png"
     },
     {
       "caption": {
-        "en": "Kitchen"
+        "en": "Kitchen",
+        "ar": "المطبخ"
       },
       "after": "/uploads/villa-17.jpg"
     },
@@ -107,7 +111,8 @@
     },
     {
       "caption": {
-        "en": "Kitchen"
+        "en": "Kitchen",
+        "ar": "المطبخ"
       },
       "after": "/uploads/villa-33.jpg"
     },
@@ -125,31 +130,36 @@
     },
     {
       "caption": {
-        "en": "Stairs"
+        "en": "Stairs",
+        "ar": "الدرج"
       },
       "after": "/uploads/villa-51.jpg"
     },
     {
       "caption": {
-        "en": "Home Office "
+        "en": "Home Office ",
+        "ar": "المكتب المنزلي"
       },
       "after": "/uploads/villa-97.jpg"
     },
     {
       "caption": {
-        "en": "Home Office"
+        "en": "Home Office",
+        "ar": "المكتب المنزلي"
       },
       "after": "/uploads/villa-101.jpg"
     },
     {
       "caption": {
-        "en": "Home Office - Sofa Bed"
+        "en": "Home Office - Sofa Bed",
+        "ar": "المكتب المنزلي – أريكة سرير"
       },
       "after": "/uploads/villa-100.jpg"
     },
     {
       "caption": {
-        "en": "Nursery"
+        "en": "Nursery",
+        "ar": "غرفة الطفل"
       },
       "after": "/uploads/villa-122.jpg"
     },
@@ -164,7 +174,8 @@
     },
     {
       "caption": {
-        "en": "Toddler Room"
+        "en": "Toddler Room",
+        "ar": "غرفة الطفل الصغير"
       },
       "after": "/uploads/villa-108.jpg"
     },
@@ -188,25 +199,29 @@
     },
     {
       "caption": {
-        "en": "Master Bedroom"
+        "en": "Master Bedroom",
+        "ar": "غرفة النوم الرئيسية"
       },
       "after": "/uploads/villa-151.jpg"
     },
     {
       "caption": {
-        "en": "Master Bedroom - Vanity"
+        "en": "Master Bedroom - Vanity",
+        "ar": "غرفة النوم الرئيسية – منطقة التزيين"
       },
       "after": "/uploads/Warm-Luxury-Vanity-Bedroom-Corner.png"
     },
     {
       "caption": {
-        "en": "Kids Toilet"
+        "en": "Kids Toilet",
+        "ar": "حمّام الأطفال"
       },
       "after": "/uploads/villa-165.jpg"
     },
     {
       "caption": {
-        "en": "Guest Toilet"
+        "en": "Guest Toilet",
+        "ar": "حمّام الضيوف"
       },
       "after": "/uploads/villa-103.jpg"
     }

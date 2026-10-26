@@ -1,34 +1,43 @@
 {
   "order": 6,
   "name": {
-    "en": "Arabesque Restaurant "
+    "en": "Arabesque Restaurant ",
+    "ar": "مطعم أرابيسك"
   },
   "category": "commercial",
   "property": {
-    "en": "Restaurant"
+    "en": "Restaurant",
+    "ar": "مطعم"
   },
   "year": "2024",
   "location": {
-    "en": "Dubai, United Arab Emirates "
+    "en": "Dubai, United Arab Emirates ",
+    "ar": "دبي، الإمارات العربية المتحدة"
   },
   "line": {
-    "en": "A contemporary fine dining concept inspired by the rich architectural heritage \nand cultural elegance of Marrakech, Morocco."
+    "en": "A contemporary fine dining concept inspired by the rich architectural heritage \nand cultural elegance of Marrakech, Morocco.",
+    "ar": "مفهوم راقٍ للطعام المعاصر مستوحى من الإرث المعماري الغني والأناقة الثقافية لمدينة مراكش في المغرب."
   },
   "brief": {
-    "en": "The project blends traditional Arabesque design elements with \nmodern sophistication, creating a luxurious dining destination that offers Mediterranean cuisine, live music, \nand an immersive hospitality experience. Every design decision focuses on comfort, ambiance, and authentic \ncultural expression.\n"
+    "en": "The project blends traditional Arabesque design elements with \nmodern sophistication, creating a luxurious dining destination that offers Mediterranean cuisine, live music, \nand an immersive hospitality experience. Every design decision focuses on comfort, ambiance, and authentic \ncultural expression.\n",
+    "ar": "يمزج المشروع بين عناصر الزخرفة العربية التقليدية والرقي العصري، ليصنع وجهة طعام فاخرة تقدّم المأكولات المتوسطية والموسيقى الحية وتجربة ضيافة متكاملة. وكل قرار تصميمي يركّز على الراحة والأجواء والتعبير الثقافي الأصيل."
   },
   "scope": [
     {
-      "en": "Space planning "
+      "en": "Space planning ",
+      "ar": "تخطيط المساحات"
     },
     {
-      "en": "Concept & materials "
+      "en": "Concept & materials ",
+      "ar": "المفهوم والخامات"
     },
     {
-      "en": "Custom Joinery"
+      "en": "Custom Joinery",
+      "ar": "نجارة خاصة"
     },
     {
-      "en": "Furniture & styling"
+      "en": "Furniture & styling",
+      "ar": "الأثاث والتنسيق"
     }
   ],
   "heroImage": "/uploads/Opulent-Tropical-Moroccan-Caf%C3%A9-Lounge.png",
@@ -36,7 +45,8 @@
   "pairs": [
     {
       "caption": {
-        "en": "Luxurious Moroccan Courtyard Fountain Lounge"
+        "en": "Luxurious Moroccan Courtyard Fountain Lounge",
+        "ar": "صالة نافورة فاخرة على طراز الفناء المغربي"
       },
       "after": "/uploads/Luxurious-Moroccan-Courtyard-Fountain-Lounge.png"
     },
@@ -51,13 +61,15 @@
     },
     {
       "caption": {
-        "en": " Floor Plan"
+        "en": " Floor Plan",
+        "ar": "المخطط الأرضي"
       },
       "after": "/uploads/Luxurious-Moroccan-Café-Floor-Plan.png"
     },
     {
       "caption": {
-        "en": "Material Palette"
+        "en": "Material Palette",
+        "ar": "لوحة الخامات"
       },
       "after": "/uploads/Emerald-Tiles-and-Textured-Material-Palette.png"
     }

@@ -1,34 +1,43 @@
 {
   "order": 3,
   "name": {
-    "en": "Arabian Ranches - Ruba Townhouse "
+    "en": "Arabian Ranches - Ruba Townhouse ",
+    "ar": "المرابع العربية – تاون هاوس روبا"
   },
   "category": "residential",
   "property": {
-    "en": "Townhouse"
+    "en": "Townhouse",
+    "ar": "تاون هاوس"
   },
   "year": "2026",
   "location": {
-    "en": "Dubai, United Arab Emirates"
+    "en": "Dubai, United Arab Emirates",
+    "ar": "دبي، الإمارات العربية المتحدة"
   },
   "line": {
-    "en": "This project showcases the transformation of a compact three-bedroom townhouse. "
+    "en": "This project showcases the transformation of a compact three-bedroom townhouse. ",
+    "ar": "يعرض هذا المشروع تحويل تاون هاوس مدمج من ثلاث غرف نوم."
   },
   "brief": {
-    "en": "The challenge was to maximize openness functionality within a limited floor plan.  Through \nthoughtful space planning, the interiors were reimagined to create a greater sense of flow and spaciousness \nwithout compromising comfort.  A minimal-chic aesthetic was achieved through the use of warm wood \nfinishes, clean lines, and carefully curated materials, resulting in a space that feels both inviting and \nsophisticated.\n"
+    "en": "The challenge was to maximize openness functionality within a limited floor plan.  Through \nthoughtful space planning, the interiors were reimagined to create a greater sense of flow and spaciousness \nwithout compromising comfort.  A minimal-chic aesthetic was achieved through the use of warm wood \nfinishes, clean lines, and carefully curated materials, resulting in a space that feels both inviting and \nsophisticated.\n",
+    "ar": "كان التحدي هو تعظيم الانفتاح والوظائف ضمن مساحة محدودة. ومن خلال تخطيط مدروس للمساحات، أُعيد تصور المساحات الداخلية لتمنح إحساسًا أكبر بالانسيابية والاتساع دون التضحية بالراحة. وتحقق الطابع البسيط الأنيق عبر تشطيبات الخشب الدافئة والخطوط النظيفة والخامات المنتقاة بعناية، فجاءت مساحة جذابة وراقية في آنٍ واحد."
   },
   "scope": [
     {
-      "en": "Spatial Reconfiguration"
+      "en": "Spatial Reconfiguration",
+      "ar": "إعادة تشكيل المساحات"
     },
     {
-      "en": "Living/Dinning Area Expansion "
+      "en": "Living/Dinning Area Expansion ",
+      "ar": "توسيع منطقة المعيشة والطعام"
     },
     {
-      "en": "Styling & Furnishing "
+      "en": "Styling & Furnishing ",
+      "ar": "التنسيق والتأثيث"
     },
     {
-      "en": "Storage Optimization"
+      "en": "Storage Optimization",
+      "ar": "تحسين التخزين"
     }
   ],
   "heroImage": "/uploads/thevilla-39.jpg",
@@ -36,35 +45,40 @@
   "pairs": [
     {
       "caption": {
-        "en": "Living Room "
+        "en": "Living Room ",
+        "ar": "غرفة المعيشة"
       },
       "before": "/uploads/IMG_6925.jpg",
       "after": "/uploads/thevilla-50.jpg"
     },
     {
       "caption": {
-        "en": "Hallway"
+        "en": "Hallway",
+        "ar": "الممر"
       },
       "before": "/uploads/Modern-Hallway-with-Garden-Views.png",
       "after": "/uploads/thevilla-33.jpg"
     },
     {
       "caption": {
-        "en": "Maid & Laundry Room Transformed into Coffee Bar & Dining Area"
+        "en": "Maid & Laundry Room Transformed into Coffee Bar & Dining Area",
+        "ar": "تحويل غرفة الخادمة والغسيل إلى ركن قهوة ومنطقة طعام"
       },
       "before": "/uploads/Modern-Minimal-Hallway-with-Open-Doorways.png",
       "after": "/uploads/Warm-Minimalist-Arched-Cabinet-Dining-Room.png"
     },
     {
       "caption": {
-        "en": "Kitchen Partition "
+        "en": "Kitchen Partition ",
+        "ar": "فاصل المطبخ"
       },
       "before": "/uploads/Sunlit-Kitchen-Renovation-Interior.png",
       "after": "/uploads/Warm-Minimalist-Living-Room-and-Kitchen.png"
     },
     {
       "caption": {
-        "en": "Nursery Refresh"
+        "en": "Nursery Refresh",
+        "ar": "تجديد غرفة الطفل"
       },
       "before": "/uploads/Wide-Angle-Minimalist-Nursery-Bedroom.png",
       "after": "/uploads/Warmly-Lit-Pastel-Nursery.png"
@@ -107,7 +121,8 @@
     },
     {
       "caption": {
-        "en": "Coffee Bar"
+        "en": "Coffee Bar",
+        "ar": "ركن القهوة"
       },
       "after": "/uploads/thevilla-22.jpg"
     },
@@ -131,7 +146,8 @@
     },
     {
       "caption": {
-        "en": "Kitchen"
+        "en": "Kitchen",
+        "ar": "المطبخ"
       },
       "after": "/uploads/thevilla-64.jpg"
     },
@@ -143,7 +159,8 @@
     },
     {
       "caption": {
-        "en": "Nursery"
+        "en": "Nursery",
+        "ar": "غرفة الطفل"
       },
       "after": "/uploads/thevilla-66.jpg"
     },

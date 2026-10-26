@@ -1,34 +1,43 @@
 {
   "order": 7,
   "name": {
-    "en": "Car Showroom - Ras Al Khor "
+    "en": "Car Showroom - Ras Al Khor ",
+    "ar": "صالة عرض سيارات – رأس الخور"
   },
   "category": "commercial",
   "property": {
-    "en": "Car Showroom"
+    "en": "Car Showroom",
+    "ar": "صالة عرض سيارات"
   },
   "year": "2023",
   "location": {
-    "en": "Dubai, United Arab Emirates"
+    "en": "Dubai, United Arab Emirates",
+    "ar": "دبي، الإمارات العربية المتحدة"
   },
   "line": {
-    "en": "Located in Ras Al Khor, Dubai, this car showroom was designed to maximize spatial efficiency while creating a chic, contemporary interior."
+    "en": "Located in Ras Al Khor, Dubai, this car showroom was designed to maximize spatial efficiency while creating a chic, contemporary interior.",
+    "ar": "صُمّمت صالة عرض السيارات هذه في رأس الخور بدبي لتحقيق أقصى كفاءة في استغلال المساحة مع ابتكار مساحة داخلية معاصرة وأنيقة."
   },
   "brief": {
-    "en": "The design focuses on enhancing openness through an extended and reconfigured ceiling design, to create a greater sense of height, space, and airiness. Every design decision balances functionality with refined aesthetics, resulting in a showroom that feels expansive, inviting, and thoughtfully designed to showcase the vehicles.\n"
+    "en": "The design focuses on enhancing openness through an extended and reconfigured ceiling design, to create a greater sense of height, space, and airiness. Every design decision balances functionality with refined aesthetics, resulting in a showroom that feels expansive, inviting, and thoughtfully designed to showcase the vehicles.\n",
+    "ar": "يركّز التصميم على تعزيز الإحساس بالانفتاح من خلال سقف ممتد وأُعيد تشكيله ليمنح ارتفاعًا ومساحة ورحابة أكبر. وكل قرار تصميمي يوازن بين الوظيفة والجماليات الراقية، فجاءت صالة عرض رحبة وجذابة ومصممة بعناية لإبراز السيارات."
   },
   "scope": [
     {
-      "en": "Space planning "
+      "en": "Space planning ",
+      "ar": "تخطيط المساحات"
     },
     {
-      "en": "Concept & materials "
+      "en": "Concept & materials ",
+      "ar": "المفهوم والخامات"
     },
     {
-      "en": "Custom joinery"
+      "en": "Custom joinery",
+      "ar": "نجارة خاصة"
     },
     {
-      "en": "Lighting design"
+      "en": "Lighting design",
+      "ar": "تصميم الإضاءة"
     }
   ],
   "heroImage": "/uploads/WhatsApp-Image-2024-03-22-at-9.56.24-PM(6).jpeg",

@@ -1,37 +1,47 @@
 {
   "order": 5,
   "name": {
-    "en": "D3 HAI Office "
+    "en": "D3 HAI Office ",
+    "ar": "مكتب HAI – حي دبي للتصميم (D3)"
   },
   "category": "commercial",
   "property": {
-    "en": "Office"
+    "en": "Office",
+    "ar": "مكتب"
   },
   "year": "2024",
   "location": {
-    "en": "Dubai, United Arab Emirates "
+    "en": "Dubai, United Arab Emirates ",
+    "ar": "دبي، الإمارات العربية المتحدة"
   },
   "line": {
-    "en": "This project explores the integration of trauma-informed design principles into a modern workplace to create \nan environment that enhances mental well-being, productivity, and a sense of belonging. Located at the HAI \nOffices in Dubai Design District (D3)"
+    "en": "This project explores the integration of trauma-informed design principles into a modern workplace to create \nan environment that enhances mental well-being, productivity, and a sense of belonging. Located at the HAI \nOffices in Dubai Design District (D3)",
+    "ar": "يستكشف هذا المشروع دمج مبادئ التصميم المراعي للصدمات النفسية في بيئة عمل حديثة، لابتكار مساحة تعزز الصحة النفسية والإنتاجية والشعور بالانتماء. ويقع في مكاتب HAI في حي دبي للتصميم (D3)."
   },
   "brief": {
-    "en": "The proposal reimagines the existing adaptive reuse office by incorporating \nbiophilic design, flexible workspaces, natural lighting, and restorative social areas that foster safety, comfort, collaboration, and emotional resilience. The design demonstrates how human-centered interior architecture can \ntransform conventional office spaces into healthier, more inclusive, and inspiring environments that positively \nsupport both individual well-being and organizational culture."
+    "en": "The proposal reimagines the existing adaptive reuse office by incorporating \nbiophilic design, flexible workspaces, natural lighting, and restorative social areas that foster safety, comfort, collaboration, and emotional resilience. The design demonstrates how human-centered interior architecture can \ntransform conventional office spaces into healthier, more inclusive, and inspiring environments that positively \nsupport both individual well-being and organizational culture.",
+    "ar": "يعيد المقترح تصور المكتب القائم، المُعاد توظيفه، عبر دمج التصميم الحيوي (Biophilic) ومساحات العمل المرنة والإضاءة الطبيعية ومناطق اجتماعية مريحة تعزز الأمان والراحة والتعاون والمرونة العاطفية. ويُظهر التصميم كيف يمكن للعمارة الداخلية المتمحورة حول الإنسان أن تحوّل المكاتب التقليدية إلى بيئات أكثر صحة وشمولًا وإلهامًا، تدعم رفاهية الأفراد وثقافة المؤسسة معًا."
   },
   "scope": [
     {
-      "en": "Biophilic Integration"
+      "en": "Biophilic Integration",
+      "ar": "دمج التصميم الحيوي (الطبيعة)"
     },
     {
-      "en": "Human-Centered Spatial Planning"
+      "en": "Human-Centered Spatial Planning",
+      "ar": "تخطيط مساحات متمحور حول الإنسان"
     },
     {
-      "en": "Restorative Workplace Environments"
+      "en": "Restorative Workplace Environments",
+      "ar": "بيئات عمل مُرمِّمة للطاقة"
     },
     {
-      "en": "Sustainable Material & Design Strategies"
+      "en": "Sustainable Material & Design Strategies",
+      "ar": "خامات واستراتيجيات تصميم مستدامة"
     },
     {
-      "en": "Trauma-Informed Design"
+      "en": "Trauma-Informed Design",
+      "ar": "تصميم مراعٍ للصدمات النفسية"
     }
   ],
   "heroImage": "/uploads/Golden-Hour-Biophilic-Coworking-Lounge.png",
@@ -39,37 +49,43 @@
   "pairs": [
     {
       "caption": {
-        "en": "Creative Lounge"
+        "en": "Creative Lounge",
+        "ar": "صالة إبداعية"
       },
       "after": "/uploads/Sunlit-Modern-Lounge-with-Indoor-Putting-Green.png"
     },
     {
       "caption": {
-        "en": "Garden Work Lounge"
+        "en": "Garden Work Lounge",
+        "ar": "صالة عمل في الحديقة"
       },
       "after": "/uploads/Golden-Hour-Courtyard-Work-Lounge.png"
     },
     {
       "caption": {
-        "en": "Office Lounge"
+        "en": "Office Lounge",
+        "ar": "صالة المكتب"
       },
       "after": "/uploads/Sunlit-Biophilic-Office-Lounge.png"
     },
     {
       "caption": {
-        "en": "Office Reception"
+        "en": "Office Reception",
+        "ar": "استقبال المكتب"
       },
       "after": "/uploads/Sunlit-Luxury-Office-Reception.png"
     },
     {
       "caption": {
-        "en": "Multi-Purpose Lounge"
+        "en": "Multi-Purpose Lounge",
+        "ar": "صالة متعددة الاستخدامات"
       },
       "after": "/uploads/Sunset-Putting-Green-Lounge.png"
     },
     {
       "caption": {
-        "en": "Pantry & Lounge"
+        "en": "Pantry & Lounge",
+        "ar": "البانتري والصالة"
       },
       "after": "/uploads/Golden-Hour-Biophilic-Coworking-Lounge.png"
     }
