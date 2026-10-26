@@ -40,7 +40,11 @@
       },
       "after": "/uploads/Sunlit-Scandinavian-Biophilic-Creative-Lounge.png"
     },
-    {},
+    {
+      "caption": {
+        "en": "Office "
+      }
+    },
     {},
     {}
   ]
