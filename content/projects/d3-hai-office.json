@@ -16,5 +16,10 @@
   },
   "brief": {
     "en": "The proposal reimagines the existing adaptive reuse office by incorporating \nbiophilic design, flexible workspaces, natural lighting, and restorative social areas that foster safety, comfort, collaboration, and emotional resilience. The design demonstrates how human-centered interior architecture can \ntransform conventional office spaces into healthier, more inclusive, and inspiring environments that positively \nsupport both individual well-being and organizational culture."
-  }
+  },
+  "scope": [
+    {
+      "en": "Biophilic Design "
+    }
+  ]
 }
