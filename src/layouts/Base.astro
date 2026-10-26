@@ -30,7 +30,7 @@ const year = new Date().getFullYear();
 // --- search & social sharing ------------------------------------------------
 const pageUrl = new URL(href(lang, path), Astro.site).href;
 const origin = new URL(asset(''), Astro.site).href;
-const ogImg = site.ogImage ? new URL(imgSrc(site.ogImage, 1200), Astro.site).href : new URL(asset('logo.png'), Astro.site).href;
+const ogImg = site.ogImage?.startsWith('/uploads/') ? new URL(asset('uploads/_opt/share.jpg'), Astro.site).href : site.ogImage ? new URL(imgSrc(site.ogImage, 1200), Astro.site).href : new URL(asset('share.jpg'), Astro.site).href;
 const isHome = bodyClass.split(' ').includes('home');
 const phoneIsReal = site.phone && !/0000/.test(site.phone);
 const instagramIsReal = site.instagramUrl && site.instagramUrl.startsWith('http');
