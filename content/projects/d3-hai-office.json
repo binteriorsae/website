@@ -46,7 +46,11 @@
       },
       "after": "/uploads/Sunlit-Biophilic-Office-Lounge.png"
     },
-    {},
+    {
+      "caption": {
+        "en": "Entrance"
+      }
+    },
     {}
   ]
 }
