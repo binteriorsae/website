@@ -35,3 +35,14 @@ for (const file of walk(SRC)) {
   }
 }
 console.log(`Image optimisation done (${made} new file${made === 1 ? '' : 's'}).`);
+
+// Picture shown when the site is shared (WhatsApp, Instagram, Google): 1200x630 JPEG, which every app understands.
+try {
+  const og = JSON.parse(fs.readFileSync('content/site.json', 'utf8')).ogImage;
+  if (og && og.startsWith('/uploads/') && fs.existsSync(path.join('public', og))) {
+    await sharp(path.join('public', og)).rotate().resize(1200, 630, { fit: 'cover' }).jpeg({ quality: 82 }).toFile(path.join(OUT, 'share.jpg'));
+    console.log('Share picture made.');
+  }
+} catch (err) {
+  console.warn(`WARNING: could not make the share picture: ${err.message}`);
+}
