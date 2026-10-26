@@ -10,5 +10,10 @@
   "year": "2025",
   "location": {
     "en": "Dubai, United Arab Emirates"
-  }
+  },
+  "scope": [
+    {
+      "en": "Space planning "
+    }
+  ]
 }
