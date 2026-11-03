@@ -17,11 +17,11 @@
     {
       "title": {
         "en": "Residential Interior Design",
-        "ar": "التصميم السكني"
+        "ar": "التصميم الداخلي السكني"
       },
       "description": {
         "en": "Complete interior design for villas, apartments and penthouses from layout and finishes to lighting and furnishings.",
-        "ar": "تصميم داخلي متكامل للفلل والشقق والبنتهاوس — من التخطيط والتشطيبات إلى الإضاءة والأثاث."
+        "ar": "تصميم داخلي متكامل للفلل والشقق والبنتهاوس، من التخطيط والتشطيبات إلى الإضاءة والأثاث."
       },
       "scope": [
         {
@@ -49,7 +49,7 @@
     {
       "title": {
         "en": "Commercial Interior Design",
-        "ar": "المساحات التجارية"
+        "ar": "التصميم الداخلي التجاري"
       },
       "description": {
         "en": "Welcoming, brand-led environments for boutiques, offices, restaurants and clinics that leave a lasting impression.",
@@ -117,7 +117,7 @@
       },
       "description": {
         "en": "One-to-one guidance for those who want expert direction in-person or online and the confidence to do the rest.",
-        "ar": "إرشاد فردي لمن يريد توجيهًا خبيرًا — حضوريًا أو عبر الإنترنت — وثقة لإكمال الباقي بنفسه."
+        "ar": "إرشاد فردي لمن يريد توجيهًا خبيرًا، حضوريًا أو عبر الإنترنت، وثقة لإكمال الباقي بنفسه."
       },
       "scope": [
         {
